@@ -1,0 +1,223 @@
+ideas = {
+	mobilization_laws = {
+	}
+	economy = {
+	}
+	industrial_concern = {
+		VAL_idea_vale_mining_company = {
+			allowed = {
+				tag = VAL
+			}
+			traits = {}
+		}
+		VAL_idea_vale_quartermaster_general = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { quartermaster_general}
+		}
+		VAL_idea_valean_defense_council = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { fortification_engineer}
+		}
+	}
+	theorist = {
+		VAL_idea_dr_lyra_tansy = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { military_theorist}
+			ledger = army
+		}
+		VAL_idea_professor_orion_steel = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { naval_theorist}
+			ledger = army
+		}
+	}
+	army_chief = {
+		VAL_idea_general_thorne_blackwood = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { army_chief_offensive_3}
+		}
+		VAL_idea_general_elara_voss = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { army_chief_maneuver_2}
+		}
+		VAL_idea_general_kellan_frostbane = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { army_chief_old_guard}
+		}
+	}
+	navy_chief = {
+		VAL_idea_admiral_seraphis_aegis = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { navy_chief_maneuver_2}
+		}
+		VAL_idea_admiral_varian_gale = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { navy_chief_maneuver_2}
+		}
+	}
+	air_chief = {
+	}
+	high_command = {
+		VAL_idea_general_kaelan_ironhart = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { army_infantry_2}
+			ledger = army
+		}
+		VAL_idea_general_mira_solstice = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { army_artillery_1 army_infantry_1}
+			ledger = army
+		}
+		VAL_idea_general_darius_stormwatch = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { army_entrenchment_1 army_chief_drill_1 army_chief_organizational_1}
+			ledger = army
+		}
+		VAL_idea_staff_sergeant_gray_erill = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { army_artillery_1 army_logistics_2 army_infantry_1}
+			ledger = army
+		}
+		VAL_idea_admiral_lysandra_wavecrest = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { navy_screen_2 navy_anti_submarine_1}
+			ledger = navy
+		}
+		VAL_idea_admiral_serin_emberflame = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { navy_capital_ship_2}
+			ledger = navy
+		}
+		VAL_idea_elite_huntsmen_mira_solstice = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { army_commando_3}
+			ledger = army
+		}
+	}
+	political_advisor = {
+		VAL_idea_advisor_for_democracy_in_vale = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { democratic_reformer}
+		}
+		VAL_idea_advisor_for_humanity_in_vale = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { fascist_demagogue}
+		}
+		VAL_idea_advisor_for_faunus_in_vale = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { fascist_demagogue}
+		}
+		VAL_idea_advisor_for_tribalism_in_vale = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { communist_revolutionary}
+		}
+		VAL_idea_advisor_for_monarchy_in_vale = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { democratic_reformer}
+		}
+		VAL_idea_valean_war_cabinet_ = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { war_industrialist}
+		}
+		VAL_idea_valean_industry_cabinet_ = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { captain_of_industry}
+		}
+		VAL_idea_valean_internal_cabinet = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { silent_workhorse}
+		}
+	}
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+		VAL_idea_vale_shipwrights_guild = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { naval_manufacturer}
+		}
+		VAL_idea_aetherial_vessels_inc = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { convoy_escort_naval_manufacturer}
+		}
+		VAL_idea_titan_industries = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { atlantic_fleet_naval_manufacturer}
+		}
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+		VAL_idea_vale_rifling_company = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { infantry_equipment_manufacturer}
+		}
+		VAL_idea_vale_cannon_co = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { artillery_manufacturer}
+		}
+		VAL_idea_the_vale_support_guild = {
+			allowed = {
+				tag = VAL
+			}
+			traits = { support_equipment_manufacturer}
+		}
+	}
+}

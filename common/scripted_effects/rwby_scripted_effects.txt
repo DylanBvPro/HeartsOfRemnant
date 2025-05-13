@@ -1,0 +1,6 @@
+add_1_tech_point = {
+	add_to_variable = {
+		var=THIS.rwby_tech_points
+		value = 1
+	}
+}

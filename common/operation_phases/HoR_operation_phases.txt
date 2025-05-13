@@ -1,0 +1,14 @@
+placeholder_phase = {
+	name = placeholder_phase_name
+	desc = placeholder_phase_desc
+	icon = GFX_placeholder
+	picture = GFX_placeholder
+	outcome = placeholder_phase_outcome
+	map_icon = GFX_placeholder
+	outcome_extra = placeholder_phase_outcome_extra
+	#requirements = {}
+	return_on_complete = no
+	equipment = {
+		placeholder_equipment_archetype = 1
+	}
+}

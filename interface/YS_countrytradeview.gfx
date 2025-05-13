@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_youjo_country_trade_entry_bg"
+		texturefile = "gfx/interface/youjo_country_trade_entry_bg.dds"
+		noOfFrames = 3		
+	}
+	spriteType = {
+		name = "GFX_youjo_trade_resource_bg"
+		texturefile = "gfx/interface/youjo_trade_resource_bg.dds"
+	}
+}

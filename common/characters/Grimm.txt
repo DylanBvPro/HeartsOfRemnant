@@ -1,0 +1,16 @@
+characters = {
+	NAB_Grimm = {
+		name=NAB_Grimm
+		portraits={
+			civilian={
+				large= GFX_Grim
+			}
+		}
+		country_leader={
+			ideology=pack_system
+			expire=110.1.1
+			desc=NAB_Grimm_desc
+			
+		}
+	}
+}

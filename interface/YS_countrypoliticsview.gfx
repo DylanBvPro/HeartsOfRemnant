@@ -1,0 +1,28 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_autonomy_YS_trust_territory_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_autonomy_YS_province_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_integrated_puppet_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_autonomy_YS_vassal_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_colony_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_autonomy_YS_protectorate_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_dominion_icon.dds"
+	}
+	
+	spriteType = { #YOUJO SENKI - MONARCHISM
+		name = "GFX_ideology_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism_group.dds"
+	}
+	
+}

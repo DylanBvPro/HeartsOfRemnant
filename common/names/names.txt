@@ -1,0 +1,16 @@
+default = {
+	male = {
+		names = {
+			"MaleFirstName1" "MaleFirstName2" "MaleFirstName3" "MaleFirstName4" "MaleFirstName5" 
+			"MaleFirstName6" "MaleFirstName7" "MaleFirstName8" "MaleFirstName9" "MaleFirstName10"
+		}
+	}
+	female = {
+		names = {
+			"FemaleFirstName1" "FemaleFirstName2" "FemaleFirstName3" "FemaleFirstName4" "FemaleFirstName5"
+			"FemaleFirstName6" "FemaleFirstName7" "FemaleFirstName8" "FemaleFirstName9" "FemaleFirstName10"
+		}
+	}
+	surnames = {"Surname1" "Surname2" "Surname3" "Surname4" "Surname5" "Surname6" "Surname7" "Surname8" "Surname9" "Surname10"}
+	callsigns = {"Callsign1" "Callsign2" "Callsign3" "Callsign4" "Callsign5" "Callsign6" "Callsign7" "Callsign8" "Callsign9" "Callsign10"}
+}

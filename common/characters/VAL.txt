@@ -13,4 +13,22 @@ characters={
 			id=22322
 		}
 	}
+	#Soldier King Of Vale
+	vale_soldier_king_of_vale = {
+		name = vale_soldier_king_of_vale
+		portraits = {
+			army = {
+				large = GFX_vale_soldier_king_of_vale_large
+				small = GFX_vale_soldier_king_of_vale_small
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist logistics_wizard infantry_leader skilled_staffer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
 }

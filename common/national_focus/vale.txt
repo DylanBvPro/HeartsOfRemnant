@@ -47,6 +47,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = VAL_the_story_of_vale  }
+		mutually_exclusive = { focus = VAL_historical_path }
 	}
 
 	#Fight For Our Home
@@ -115,6 +116,7 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		prerequisite = { focus = VAL_secure_our_coast  }
+		mutually_exclusive = { focus = VAL_the_warrior_king }
 		ai_will_do = { factor = 40 }
 	}
 
@@ -261,6 +263,7 @@ focus_tree = {
 			FOCUS_FILTER_ANNEXATION
 		}
 		prerequisite = { focus = VAL_remove_the_grimm_in_the_north  }
+		mutually_exclusive = { focus = VAL_give_the_northern_pocket_to_the_colony }
 	}
 
 	#Remove The Grimm In The South
@@ -415,6 +418,7 @@ focus_tree = {
 			FOCUS_FILTER_ANNEXATION
 		}
 		prerequisite = { focus = VAL_remove_the_grimm_in_the_south  }
+		mutually_exclusive = { focus = VAL_expand_into_the_southern_pocket}
 		ai_will_do = { factor = 40 }
 	}
 
@@ -506,6 +510,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
+		mutually_exclusive = {focus = VAL_attempt_to_find_compromise }
 		ai_will_do = { factor = 10 }
 	}
 
@@ -562,6 +567,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = VAL_the_treaty_of_vytal  }
+		mutually_exclusive = { focus = VAL_the_one_to_rule_them_all }
 		ai_will_do = { factor = 50 }
 	}
 
@@ -647,6 +653,7 @@ focus_tree = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
 		prerequisite = { focus = VAL_push_them_out_of_sanus  }
+		mutually_exclusive = { focus = VAL_surprise_attack_on_mantel}
 		ai_will_do = { factor = 50 }
 	}
 

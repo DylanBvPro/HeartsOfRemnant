@@ -1,0 +1,23 @@
+state = {
+    id = 343
+    name = "Mantle Tradepost"
+    provinces = {740}
+    manpower = 1200
+    buildings_max_level_factor = 1.000
+    state_category = town
+    victory_points = {740 5}
+    history = {
+        owner = ATL
+        add_core_of = ATL
+        buildings = {
+            arms_factory = 1
+            industrial_complex = 1
+            infrastructure = 3
+            dockyard = 1
+            740 = {
+                coastal_bunker = 2
+                naval_base = 2
+            }
+        }
+    }
+}

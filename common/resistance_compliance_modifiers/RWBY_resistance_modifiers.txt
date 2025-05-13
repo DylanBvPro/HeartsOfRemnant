@@ -1,0 +1,9 @@
+placeholder_resistance_modifier = {
+	tooltip = "Placeholder resistance modifier tooltip."
+	type=state_resistance_modifier
+	threshold = 99
+	margin = 1
+	state_modifier = {
+		resistance_damage_to_garrison = 0.1
+	}
+}

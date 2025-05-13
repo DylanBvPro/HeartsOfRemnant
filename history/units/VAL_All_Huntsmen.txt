@@ -1,0 +1,49 @@
+#Create units
+division_template = {
+	name = "Huntsmen Brigade"
+    regiments = {
+        hunter = { x = 0 y = 0 }
+        hunter = { x = 0 y = 1 }
+        hunter = { x = 1 y = 0 }
+        hunter = { x = 1 y = 1 }
+    }
+    support = {
+		logistics = { x = 0 y = 0 }
+    }
+}
+
+units = {
+
+	division = {
+		name = "Huntsmen Brigade"
+		location = 2167
+		division_template = "Huntsmen Brigade"
+		amount = 5
+		start_experience_factor = 1.0
+		equipment = {
+			infantry_equipment = 1.0
+		}
+	}
+
+	division = {
+		name = "Huntsmen Brigade"
+		location = 526
+		division_template = "Huntsmen Brigade"
+		amount = 1
+		start_experience_factor = 1.0
+		equipment = {
+			infantry_equipment = 1.0
+		}
+	}
+
+	division = {
+		name = "Huntsmen Brigade"
+		location = 1763
+		division_template = "Huntsmen Brigade"
+		amount = 1
+		start_experience_factor = 1.0
+		equipment = {
+			infantry_equipment = 1.0
+		}
+	}
+}

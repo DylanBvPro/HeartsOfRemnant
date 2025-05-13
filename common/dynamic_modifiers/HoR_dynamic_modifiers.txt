@@ -1,0 +1,7 @@
+placeholder_dynamic_modifier = {
+	icon=GFX_placeholder
+	enable={always=no}
+	remove_trigger = {always=yes}
+	attacker_modifier = no
+	stability_factor=0.01
+}

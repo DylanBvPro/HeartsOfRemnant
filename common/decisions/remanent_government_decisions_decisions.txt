@@ -1,0 +1,18 @@
+remanent_government_decisions = {
+	sponsor_a_grimm_hunt = {
+		icon = decision_icon_sponsor_a_grimm_hunt
+		cost = 50
+		days_remove = 30
+		days_re_enable = 60
+		visible = {
+			is_major = yes
+
+
+		}
+		complete_effect = {
+			army_experience = 10
+
+
+		}
+	}
+}

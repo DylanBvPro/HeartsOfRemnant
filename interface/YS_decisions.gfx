@@ -1,0 +1,18 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_decision_EMP_recruitment_policy"
+		texturefile = "gfx/interface/decisions/decision_EMP_recruitment_policy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_EMP_industrial_recovery"
+		texturefile = "gfx/interface/decisions/decision_EMP_industrial_recovery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_EMP_war_cabinet"
+		texturefile = "gfx/interface/decisions/decision_EMP_war_cabinet.dds"
+	} 
+	
+}

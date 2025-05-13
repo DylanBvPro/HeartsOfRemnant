@@ -32,4 +32,5 @@ set_politics = {
 
 
 
-recruit_character = VAC_leader
+recruit_character = vacuo_queen_of_vacuo
+

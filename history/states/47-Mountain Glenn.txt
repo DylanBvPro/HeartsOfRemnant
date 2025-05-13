@@ -1,17 +1,22 @@
 state={
-	id=47
-	name="STATE_47"
-	provinces={
-		197 233 808 2307 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-history={
-victory_points = { 233 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = MGC
-		add_core_of = MGC
-		}
+    id=47
+    name="STATE_47"
+    provinces={
+        197 233 808 2307
+    }
+    manpower=17000
+    buildings_max_level_factor=1.000
+    state_category=large_town
+    history={
+        victory_points={
+            233 1
+        }
+        buildings={
+            infrastructure=2
+            arms_factory=1
+            industrial_complex=1
+        }
+        owner=VAL
+        add_core_of=VAL
+    }
 }

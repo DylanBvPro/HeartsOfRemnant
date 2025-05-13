@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_military_industrial_organization_mage_equipment"
+		textureFile = "gfx/interface/counters/divisions_large/unit_mages_icon.dds" noOfFrames = 2
+	}
+}

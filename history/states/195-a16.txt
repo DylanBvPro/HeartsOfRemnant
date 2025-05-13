@@ -11,7 +11,7 @@ history={
 victory_points = { 1918 1 }
 buildings = { 
 infrastructure = 2 }
-		owner = MMH
-		add_core_of = MMH
+		owner = ATL
+		add_core_of = ATL
 		}
 }

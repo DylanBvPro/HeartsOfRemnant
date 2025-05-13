@@ -1,0 +1,40 @@
+tech_spawning_decisions={
+	@TECH_COST=-5
+	@RWBY_RESEARCH_TIME = 20
+	spawn_tech_1 = {
+		available = {
+			check_variable = {
+				THIS.rwby_tech_points > 4
+			}
+			NOT={
+				has_tech = placeholder_tech_99
+			}
+			custom_trigger_tooltip = {
+				tooltip = 5_tech_points_tt
+			}
+		}
+		cost=0
+		complete_effect={
+			set_country_flag = spawn_tech_mission_1_visible
+			activate_mission = spawn_tech_1_mission
+			add_to_variable = {
+				var=THIS.rwby_tech_points
+				value = @TECH_COST
+			}
+		}
+	}
+	spawn_tech_1_mission = {
+		days_mission_timeout = @RWBY_RESEARCH_TIME
+		visible = {
+			has_country_flag = spawn_tech_mission_1_visible
+		}
+		available = {always=no} #When can the player select this.
+		timeout_effect = {
+			set_technology = {
+				placeholder_tech_99 = 1
+			}
+		}
+	}
+
+
+}

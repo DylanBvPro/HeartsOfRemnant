@@ -1,0 +1,17 @@
+placeholder_MIO = {
+	name = placeholder_MIO_name
+	icon = GFX_placeholder
+	allowed = {always = no}
+
+	equipment_type = {
+		infantry_equipment
+	}
+	research_categories = {
+		infantry_tech
+	}
+	research_bonus = 0.01
+	task_capacity = 1
+	ai_will_do = {
+		base = 1
+	}
+}

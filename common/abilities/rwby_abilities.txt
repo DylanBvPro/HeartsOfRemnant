@@ -1,0 +1,24 @@
+ability = {
+	placeholder_ability = {
+		name=ABILITY_PLACEHOLDER_ABILITY_NAME
+		desc=ABILITY_PLACEHOLDER_ABILITY_DESC
+		sound_effect=command_power_ability_offensive
+		type=army_leader
+		allowed={
+			always=yes
+		}
+		ai_will_do = {
+			base=1
+		}
+		cost=0.01
+		duration=1
+		one_time_effect={
+			add_temporary_buff_to_units = {
+				combat_offense=0.01
+
+				days=1
+				tooltip=ABILITY_PLACEHOLDER_ABILITY_TOOLTIP
+			}
+		}	
+	}
+}

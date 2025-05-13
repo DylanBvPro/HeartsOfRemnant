@@ -1,0 +1,59 @@
+technologies = {
+	
+	placeholder_tech_1 = {
+		allow = {always = yes}
+		allow_branch = {
+			always=yes
+		}
+		path = {
+			leads_to_tech = placeholder_tech_99
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = placeholder_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 90
+		folder = {
+			name = infantry_folder
+			position = {x =0 y =0 }
+		}
+		local_resources_factor = 0.05
+		enable_equipments = {
+			infantry_equipment
+			support_equipment
+			artillery_equipment
+		}
+		categories = {cat_placeholder}
+	}
+	placeholder_tech_2 = {
+		allow = {always = yes}
+		allow_branch = {
+			always=yes
+		}
+		path = {
+			leads_to_tech = placeholder_tech_99
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 90
+		folder = {
+			name = infantry_folder
+			position = {x =4 y =0 }
+		}
+		local_resources_factor = 0.05
+		categories = {cat_placeholder}
+	}
+	placeholder_tech_99 = {
+		allow = {has_tech = placeholder_tech_1}
+		research_cost = 1
+		start_year = 90
+		folder = {
+			name = infantry_folder
+			position = {x =0 y =5 }
+		}
+		local_resources_factor = 0.05
+		categories = {cat_placeholder}
+	}
+}

@@ -69,4 +69,4 @@ set_popularities = {
 }
 
 
-recruit_character = ATL_leader
+recruit_character = mantle_king_of_mantle

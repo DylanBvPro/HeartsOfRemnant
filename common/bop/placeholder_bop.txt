@@ -1,0 +1,23 @@
+placeholder_BOP = {
+	left_side = placeholder_bop_left
+	right_side = placeholder_bop_right
+	decision_category = placeholder_decision_category
+	side = {
+		id = placeholder_bop_left
+		#icon=
+		range = {
+			id = placeholder_bop_left_range
+			min = -1
+			max = -0.1
+		}
+	}
+	side = {
+		id = placeholder_bop_right
+		#icon=
+		range = {
+			id = placeholder_bop_right_range
+			min = 0
+			max = 0.9
+		}
+	}
+}

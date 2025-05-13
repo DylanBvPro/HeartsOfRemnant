@@ -1,0 +1,16 @@
+give_northern_pocket_to_VEC = {
+	237 = { set_owner = VEC }
+	209 = { set_owner = VEC }
+	233 = { set_owner = VEC }
+	208 = { set_owner = VEC }
+	207 = { set_owner = VEC }
+}
+give_southern_pocket_to_VSC = {
+	266 = { set_owner = VSC }
+	267 = { set_owner = VSC }
+	240 = { set_owner = VSC }
+	259 = { set_owner = VSC }
+	115 = { set_owner = VSC }
+	201 = { set_owner = VSC }
+	258 = { set_owner = VSC }
+}

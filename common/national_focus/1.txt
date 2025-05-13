@@ -1,0 +1,1550 @@
+focus_tree = {
+	id = 1
+	continuous_focus_position = { x = _40 y = 2350 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VAL
+		}
+	}
+	#The Story Of Vale
+	focus = {
+		id = VAL_the_story_of_vale
+		icon = GFX_goal_unknown
+		x = 9
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 50 }
+	}
+
+	#Historical Path
+	focus = {
+		id = VAL_historical_path
+		icon = GFX_goal_unknown
+		x = 7
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_the_story_of_vale  }
+		mutually_exclusive = { focus = VAL_althistory_path  }
+		ai_will_do = { factor = 50 }
+	}
+
+	#Alt_History Path
+	focus = {
+		id = VAL_althistory_path
+		icon = GFX_goal_unknown
+		x = 11
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_the_story_of_vale  }
+	}
+
+	#Fight For Our Home
+	focus = {
+		id = VAL_fight_for_our_home
+		icon = GFX_goal_unknown
+		x = 7
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { 
+			focus = VAL_attempt_to_find_compromise  
+			focus = VAL_aggressive_move
+		}
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_ideas = VAL_ID_fight_for_our_home
+		}
+	}
+
+	#Connect The Kingdoms
+	focus = {
+		id = VAL_connect_the_kingdoms
+		icon = GFX_goal_unknown
+		x = 5
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_an_alliance_against_tyranny }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			add_core_of_state = 130
+			add_core_of_state = 131
+
+			130 = {
+				add_building = {
+					type = infrastructure
+					amount = 1
+				}
+				controller = {
+					limit = {
+						NOT = { tag = ROOT } # Avoid declaring war on self
+					}
+					declare_war_on = {
+						target = PREV
+						type = annex_war
+					}
+				}
+			}
+			131 = {
+				add_building = {
+					type = infrastructure
+					amount = 1
+				}
+			}
+		}
+	}
+
+
+	#The King's Speech
+	focus = {
+		id = VAL_thekingsspeech
+		icon = GFX_goal_unknown
+		x = 8
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_a_scholar_king  focus = VAL_the_warrior_king  }
+	}
+
+	#Secure Our Coast
+	focus = {
+		id = VAL_secure_our_coast
+		icon = GFX_goal_unknown
+		x = 8
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_fight_for_our_home }
+		ai_will_do = { factor = 40 }
+
+		completion_reward = {
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 2320
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 2262
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 298
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 744
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 2176
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 542
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 1678
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 907
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 309
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 2115
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 1736
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 198
+			}
+			add_building_construction = {
+				type = coastal_fort
+				level = 1
+				province = 2092
+			}
+		}
+	}
+
+	#A Scholar King
+	focus = {
+		id = VAL_a_scholar_king
+		icon = GFX_goal_unknown
+		x = 9
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = VAL_secure_our_coast }
+		ai_will_do = { factor = 40 }
+
+		completion_reward = {
+			# Add 5 research speed boosts of 100%
+			add_technology_bonus = {
+				technology = research_speed
+				bonus = 1.0 # 100% increase
+				count = 5
+			}
+
+			# Add 1 extra research slot
+			add_research_slot = 1
+		}
+	}
+
+
+	#Attempt To Find Compromise
+	focus = {
+		id = VAL_attempt_to_find_compromise
+		icon = GFX_goal_unknown
+		x = 6
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = VAL_open_talks_with_mistral  }
+		mutually_exclusive = { focus = VAL_placate_mistral  }
+		ai_will_do = { factor = 50 }
+	}
+
+	# Prepare The Colonial Guard
+	focus = {
+		id = VAL_prepare_the_colonial_guard
+		icon = GFX_goal_unknown
+		x = 5
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = VAL_expand_the_western_colonies }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			add_war_support = 0.05
+			load_oob = VAL_Colonial_Guard
+			load_oob = VEC_Colonial_Guard			
+			load_oob = VSC_Colonial_Guard
+		}
+	}
+
+
+	#An Alliance Against Tyranny
+	focus = {
+		id = VAL_an_alliance_against_tyranny
+		icon = GFX_goal_unknown
+		x = 5
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_call_for_all_huntsmen }
+		ai_will_do = { factor = 50 }
+		available = {
+			NOT = {
+				has_completed_focus = VAL_aggressive_move
+			}
+		}
+		completion_reward = {
+			create_faction = "The Grand Alliance"
+			country_event = {
+				id = VAL_vacuo_alliance_invite
+			}
+		}
+	}
+
+	#The Warrior King
+	focus = {
+		id = VAL_the_warrior_king
+		icon = GFX_goal_unknown
+		x = 7
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_secure_our_coast  }
+		mutually_exclusive = { focus = VAL_a_scholar_king  }
+		ai_will_do = { factor = 50 }
+	}
+
+	#Call For All Huntsmen
+	focus = {
+		id = VAL_call_for_all_huntsmen
+		icon = GFX_goal_unknown
+		x = 6
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = VAL_fight_for_our_home }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			add_ideas = fight_for_our_home
+			
+			load_oob = VAL_All_Huntsmen
+		}
+	}
+
+
+	# Expand Shipyards
+	focus = {
+		id = VAL_expand_shipyards
+		icon = GFX_goal_unknown
+		x = 1
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = VAL_expandvalescoreindustry }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# First state
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					NOT = { has_state_flag = VAL_shipyard_boosted_1 }
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = VAL_shipyard_boosted_1
+			}
+			# Second state
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					NOT = {
+						has_state_flag = VAL_shipyard_boosted_1
+						has_state_flag = VAL_shipyard_boosted_2
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = VAL_shipyard_boosted_2
+			}
+			# Third state
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					NOT = {
+						has_state_flag = VAL_shipyard_boosted_1
+						has_state_flag = VAL_shipyard_boosted_2
+						has_state_flag = VAL_shipyard_boosted_3
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = VAL_shipyard_boosted_3
+			}
+			# Fourth state
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					NOT = {
+						has_state_flag = VAL_shipyard_boosted_1
+						has_state_flag = VAL_shipyard_boosted_2
+						has_state_flag = VAL_shipyard_boosted_3
+						has_state_flag = VAL_shipyard_boosted_4
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = VAL_shipyard_boosted_4
+			}
+		}
+	}
+
+
+
+	# Expand Vale's Core Industry
+	focus = {
+		id = VAL_expandvalescoreindustry
+		icon = GFX_goal_unknown
+		x = 1
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = VAL_expand_local_industry }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# First state
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					NOT = { has_state_flag = VAL_core_industry_boosted_1 }
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = VAL_core_industry_boosted_1
+			}
+			# Second state
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					NOT = {
+						has_state_flag = VAL_core_industry_boosted_1
+						has_state_flag = VAL_core_industry_boosted_2
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = VAL_core_industry_boosted_2
+			}
+			# Third state
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					NOT = {
+						has_state_flag = VAL_core_industry_boosted_1
+						has_state_flag = VAL_core_industry_boosted_2
+						has_state_flag = VAL_core_industry_boosted_3
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = VAL_core_industry_boosted_3
+			}
+		}
+	}
+
+
+	#The Coming Storm
+	focus = {
+		id = VAL_the_coming_storm
+		icon = GFX_goal_unknown
+		x = 5
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_historical_path  }
+		ai_will_do = { factor = 50 }
+		completion_reward = {
+			add_political_power = 100
+			
+			
+		}
+	}
+
+	# A School For Warriors
+	focus = {
+		id = VAL_a_school_for_warriors
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = VAL_preparing_the_kingdom }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			add_ideas = VAL_ID_a_school_for_warriors
+		}
+	}
+
+	# Expand Into The Northern Pocket
+	focus = {
+		id = VAL_expand_into_the_northern_pocket
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_remove_the_grimm_in_the_north }
+
+		completion_reward = {
+			237 = { add_core_of = VAL }
+			209 = { add_core_of = VAL }
+			233 = { add_core_of = VAL }
+			208 = { add_core_of = VAL }
+			207 = { add_core_of = VAL }
+		}
+	}
+
+
+	# Remove The Grimm In The South
+	focus = {
+		id = VAL_remove_the_grimm_in_the_south
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_expand_the_kingdom }
+
+		completion_reward = {
+			266 = {
+				controller = {
+					limit = {
+						NOT = { tag = ROOT } # Avoid declaring war on self
+					}
+					declare_war_on = {
+						target = PREV
+						type = annex_war
+					}
+				}
+			}
+		}
+	}
+
+	# Mandatory Colonial Training
+	focus = {
+		id = VAL_mandatory_colonial_training
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = VAL_a_school_for_warriors }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			VEC = {
+				add_ideas = VEC_colonial_training_idea
+			}
+			VSC = {
+				add_ideas = VSC_colonial_training_idea
+			}
+		}
+	}
+
+	# Increase Funding For Schools
+	focus = {
+		id = VAL_increase_funding_for_schools
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = VAL_a_school_for_scholars }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			set_ideas_modifier = {
+				idea = VAL_ID_a_school_for_scholars
+				modifier = {
+					research_speed_factor = 0.05
+				}
+			}
+			# Add 1 extra research slot
+			add_research_slot = 1
+		}
+	}
+
+	# Expand Colonial Industry
+	focus = {
+		id = VAL_expand_colonial_industry
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = VAL_preparing_the_kingdom }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# State 232
+			232 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			# State 214
+			214 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# Give The Northern Pocket To The Colony
+	focus = {
+		id = VAL_give_the_northern_pocket_to_the_colony
+		icon = GFX_goal_unknown
+		x = 8
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_remove_the_grimm_in_the_north }
+		mutually_exclusive = { focus = VAL_expand_into_the_northern_pocket }
+		ai_will_do = { factor = 40 }
+
+		completion_reward = {
+			effect = give_northern_pocket_to_VEC
+		}
+	}
+
+
+
+	# Remove The Grimm In The North
+	focus = {
+		id = VAL_remove_the_grimm_in_the_north
+		icon = GFX_goal_unknown
+		x = 7
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_expand_the_kingdom }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			237 = {
+				controller = {
+					limit = {
+						NOT = { tag = ROOT } # Avoid declaring war on self
+					}
+					declare_war_on = {
+						target = PREV
+						type = annex_war
+					}
+				}
+			}
+		}
+	}
+
+
+	# Paving the Roads of Tomorrow
+	focus = {
+		id = VAL_paving_the_roads_of_tomorrow
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 9
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_connect_the_colonies }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# Add cores and infrastructure to each state
+
+			278 = {
+				add_core_of = ROOT
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			279 = {
+				add_core_of = ROOT
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			268 = {
+				add_core_of = ROOT
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			275 = {
+				add_core_of = ROOT
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# Connect The Colonies
+	focus = {
+		id = VAL_connect_the_colonies
+		icon = GFX_goal_unknown
+		x = 9
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = {
+			focus = VAL_expand_mining_in_the_north
+			focus = VAL_expand_mining_in_the_south
+		}
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# Declare war on the owner of state 268
+			if = {
+				limit = {
+					268 = { is_owned_by = ROOT }
+					NOT = { 268 = { is_controlled_by = ROOT } }
+				}
+				declare_war_on = {
+					target = 268.owner
+					type = annex_everything
+				}
+			}
+			else = {
+				declare_war_on = {
+					target = 268.owner
+					type = annex_everything
+				}
+			}
+
+			# Declare war on the owner of state 278
+			if = {
+				limit = {
+					278 = { is_owned_by = ROOT }
+					NOT = { 278 = { is_controlled_by = ROOT } }
+				}
+				declare_war_on = {
+					target = 278.owner
+					type = annex_everything
+				}
+			}
+			else = {
+				declare_war_on = {
+					target = 278.owner
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	# Found Mountain Glenn
+	focus = {
+		id = VAL_found_mountain_glenn
+		icon = GFX_goal_generic_build_infrastructure
+		x = 9
+		y = 9
+		cost = 14  # 14 * 10 = 140 days
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RECRUITMENT
+		}
+		prerequisite = { focus = VAL_paving_the_roads_of_tomorrow }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# Add 20 Victory Points to province 666
+			add_victory_points = {
+				province = 666
+				amount = 20
+			}
+
+			# Add level 2 land fort to province 666
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 666
+				instant_build = yes
+			}
+
+			# Add infrastructure, factories, and population to the state containing province 666
+			666 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_state_population = 20000
+			}
+		}
+	}
+
+
+
+
+	# Expand Into The Southern Pocket
+	focus = {
+		id = VAL_expand_into_the_southern_pocket
+		icon = GFX_goal_unknown
+		x = 10
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_remove_the_grimm_in_the_south }
+		mutually_exclusive = { focus = VAL_give_the_southern_pocket_to_the_colony }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			266 = { add_core_of = VAL }
+			267 = { add_core_of = VAL }
+			240 = { add_core_of = VAL }
+			259 = { add_core_of = VAL }
+			115 = { add_core_of = VAL }
+			201 = { add_core_of = VAL }
+			258 = { add_core_of = VAL }
+		}
+	}
+
+
+	# Expand The Kingdom
+	focus = {
+		id = VAL_expand_the_kingdom
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_the_coming_storm }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# Declare war on the owner of state 34
+			state_owner = {
+				id = 34
+				trigger = {
+					NOT = { tag = ROOT } # Prevent declaring war on self if player owns the state
+				}
+				declare_war_on = {
+					target = PREV
+					type = annex_war
+				}
+			}
+			# Declare war on the owner of state 82
+			state_owner = {
+				id = 82
+				trigger = {
+					NOT = { tag = ROOT }
+				}
+				declare_war_on = {
+					target = PREV
+					type = annex_war
+				}
+			}
+		}
+	}
+
+	# Expand The Western Colonies
+	focus = {
+		id = VAL_expand_the_western_colonies
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_colonial_disputes }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# Give 100 political power to VEC
+			VEC = {
+				add_political_power = 100
+			}
+
+			# Add 1 industrial complex and 1000 population to state 232
+			232 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_state_population = 1000
+			}
+		}
+	}
+
+
+	# Give The Southern Pocket To The Colony
+	focus = {
+		id = VAL_give_the_southern_pocket_to_the_colony
+		icon = GFX_goal_unknown
+		x = 12
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = VAL_remove_the_grimm_in_the_south }
+		ai_will_do = { factor = 40 }
+
+		completion_reward = {
+			# Transfer ownership of states to VSC
+			effect = give_southern_pocket_to_VSC
+		}
+	}
+
+	#Colonial Disputes
+	focus = {
+		id = VAL_colonial_disputes
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_the_coming_storm  }
+		ai_will_do = { factor = 50 }
+		completion_reward = {
+			# Trigger event for the colonists' issue
+			trigger_event = VAL_colonial_disputes_event
+		}
+	}
+
+	#Expand Local Industry
+	focus = {
+		id = VAL_expand_local_industry
+		icon = GFX_goal_unknown
+		x = 1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = VAL_preparing_the_kingdom }
+		ai_will_do = { factor = 50 }
+		
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = VAL
+			}
+		}
+	}
+
+
+	#Preparing The Kingdom
+	focus = {
+		id = VAL_preparing_the_kingdom
+		icon = GFX_goal_unknown
+		x = 2
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_the_coming_storm  }
+		ai_will_do = { factor = 50 }
+		completion_reward = {
+			add_political_power = 100
+			
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = industrial_complex
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = VAL
+			}
+			
+			
+		}
+	}
+
+	# A School For Scholars
+	focus = {
+		id = VAL_a_school_for_scholars
+		icon = GFX_goal_unknown
+		x = 2
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = VAL_expand_colonial_industry }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			add_ideas = VAL_ID_a_school_for_scholars
+		}
+	}
+
+	# Placate Mistral
+	focus = {
+		id = VAL_placate_mistral
+		icon = GFX_goal_unknown
+		x = 4
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = VAL_open_talks_with_mistral }
+		ai_will_do = { factor = 10 }
+
+		completion_reward = {
+			# Reward: _100 political power
+			add_political_power = _100
+			
+			# Applying a negative debuff to Vale's leader with the "weak_willed" trait
+			leader = {
+				add_traits = {
+					trait = "weak_willed" # Negative trait: weak_willed leader
+				}
+			}
+		}
+	}
+
+	# Vale Makes an Aggressive Move
+	focus = {
+		id = VAL_aggressive_move
+		icon = GFX_goal_generic_political_pressure
+		x = 5
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MILITARY
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = VAL_placate_mistral  }
+		prerequisite = { focus = VAL_open_talks_with_mistral }
+		ai_will_do = { factor = 10 }
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+
+			# Give justification against a rival (example: Mistral)
+			create_wargoal = {
+				type = take_state_focus
+				target = MIS
+				generator = { 238 280 } # Example contested states
+			}
+		}
+	}
+
+
+	# Expand Mining In The North
+	focus = {
+		id = VAL_expand_mining_in_the_north
+		icon = GFX_goal_unknown
+		x = 7
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = VAL_expand_into_the_northern_pocket focus = VAL_give_the_northern_pocket_to_the_colony }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# Add resources and infrastructure to state 207
+			207 = {
+				add_resource = {
+					type = steel
+					amount = 12
+					state = 207
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# Add resources and infrastructure to state 208
+			208 = {
+				add_resource = {
+					type = aluminum
+					amount = 13
+					state = 208
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# Add resources and infrastructure to state 209
+			209 = {
+				add_resource = {
+					type = oil
+					amount = 5
+					state = 209
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	# Expand Mining In The South
+	focus = {
+		id = VAL_expand_mining_in_the_south
+		icon = GFX_goal_unknown
+		x = 11
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = VAL_expand_into_the_southern_pocket focus = VAL_give_the_southern_pocket_to_the_colony }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# Add 7 chromium and 1 infrastructure to state 266
+			266 = {
+				add_resource = {
+					type = chromium
+					amount = 7
+					state = 266
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# Add 7 steel and 1 infrastructure to state 267
+			267 = {
+				add_resource = {
+					type = steel
+					amount = 7
+					state = 267
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# Add 3 rubber and 1 infrastructure to state 215
+			215 = {
+				add_resource = {
+					type = rubber
+					amount = 3
+					state = 215
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# Open Talks With Mistral
+	focus = {
+		id = VAL_open_talks_with_mistral
+		icon = GFX_goal_unknown
+		x = 5
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_prepare_the_colonial_guard }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			# Trigger the event 'Vale Talks with Mistral'
+			trigger_event = VAL_talks_with_mistral
+		}
+	}
+
+	#The Four Kingdoms
+	focus = {
+		id = VAL_the_four_kingdoms
+		icon = GFX_goal_unknown
+		x = 13
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_the_treaty_of_vytal  }
+		ai_will_do = { factor = 50 }
+	}
+
+	#The One To Rule Them All
+	focus = {
+		id = VAL_the_one_to_rule_them_all
+		icon = GFX_goal_unknown
+		x = 11
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_the_treaty_of_vytal }
+		mutually_exclusive = { focus = VAL_the_four_kingdoms }
+		ai_will_do = { factor = 40 }
+
+		# Completion reward: annex VAC, ATL, MIS
+		completion_reward = {
+			annex = VAC
+			annex = ATL
+			annex = MIS
+		}
+	}
+
+
+	# The Treaty Of Vytal
+	focus = {
+		id = VAL_the_treaty_of_vytal
+		icon = GFX_goal_unknown
+		x = 12
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAL_fight_for_our_home }
+
+		# Trigger condition for the focus to be available
+		trigger = {
+			# Vale must control state 11
+			owns_state = 11
+			# Vale and Mistral must be at peace
+			NOT = { has_war_with = MIS }
+		}
+
+		ai_will_do = { factor = 50 }
+
+		# Completing the focus triggers an event
+		completion_reward = {
+			trigger_event = VAL_treaty_of_vytal_choice
+		}
+	}
+
+	#One Final Push
+	focus = {
+		id = VAL_one_final_push
+		icon = GFX_goal_unknown
+		x = 8
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_a_second_wave_in_mantel  focus = VAL_a_second_wave_in_mistral  }
+		ai_will_do = { factor = 50 }
+	}
+
+	#A Second Wave In Mantel
+	focus = {
+		id = VAL_a_second_wave_in_mantel
+		icon = GFX_goal_unknown
+		x = 7
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_surprise_attack_on_mistral  focus = VAL_surprise_attack_on_mantel  }
+		ai_will_do = { factor = 40 }
+	}
+
+	#A Second Wave In Mistral
+	focus = {
+		id = VAL_a_second_wave_in_mistral
+		icon = GFX_goal_unknown
+		x = 9
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_surprise_attack_on_mistral  focus = VAL_surprise_attack_on_mantel  }
+		ai_will_do = { factor = 50 }
+	}
+
+	#Surprise Attack On Mistral
+	focus = {
+		id = VAL_surprise_attack_on_mistral
+		icon = GFX_goal_unknown
+		x = 9
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_push_them_out_of_sanus  }
+		ai_will_do = { factor = 50 }
+	}
+
+	#Surprise Attack On Mantel
+	focus = {
+		id = VAL_surprise_attack_on_mantel
+		icon = GFX_goal_unknown
+		x = 7
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_push_them_out_of_sanus  }
+		mutually_exclusive = { focus = VAL_surprise_attack_on_mistral  }
+		ai_will_do = { factor = 40 }
+	}
+
+	#Push Them Out Of Sanus
+	focus = {
+		id = VAL_push_them_out_of_sanus
+		icon = GFX_goal_unknown
+		x = 8
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_thekingsspeech  }
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+					# Temporary attack bonus against MIS and ATL for 120 days
+			add_timed_effect = {
+				target = ROOT
+				effect = {
+					war_support = 0.1  # Example effect for clarity; you can change this to attack/defense modifiers if needed
+					attacker_efficiency = 0.1  # 10% attack bonus
+				}
+				duration = 120
+			}
+		}
+	}
+
+	#From Our Blood
+	focus = {
+		id = VAL_from_our_blood
+		icon = GFX_goal_unknown
+		x = 5
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_connect_the_kingdoms }
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+
+
+	#The True Enemy
+	focus = {
+		id = VAL_the_true_enemy
+		icon = GFX_goal_unknown
+		x = 12
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_the_four_kingdoms  focus = VAL_the_one_to_rule_them_all  }
+		ai_will_do = { factor = 50 }
+	}
+
+	#Call Upon The Faunus
+	focus = {
+		id = VAL_the_faunus
+		icon = GFX_goal_unknown
+		x = 2
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_call_for_all_huntsmen }
+		ai_will_do = { factor = 50 }
+	}
+
+	focus = {
+		id = VAL_the_faunus_yes
+		icon = GFX_goal_unknown
+		x = 1
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_the_faunus }
+		mutually_exclusive = {
+			focus = VAL_the_faunus_no
+		}
+		ai_will_do = { factor = 50 }
+	}
+
+	focus = {
+		id = VAL_the_faunus_no
+		icon = GFX_goal_unknown
+		x = 3
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAL_the_faunus }
+		mutually_exclusive = {
+			focus = VAL_the_faunus_yes
+		}
+		ai_will_do = { factor = 50 }
+	}
+
+}

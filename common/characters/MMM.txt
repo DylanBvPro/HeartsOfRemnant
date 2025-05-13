@@ -1,0 +1,28 @@
+characters = {
+	#Alpha Grimm
+	grimm_alpha_alpha_grimm_mmm = {
+		name = grimm_alpha_alpha_grimm_mmm
+		portraits = {
+			civilian = {
+				large = GFX_grimm_alpha_alpha_grimm_large
+			}
+			army = {
+				large = GFX_grimm_alpha_alpha_grimm_large
+				small = GFX_grimm_alpha_alpha_grimm_small
+			}
+		}
+		country_leader = {
+			ideology = pack_system
+			traits = {  }
+			expire = "120.1.1"
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

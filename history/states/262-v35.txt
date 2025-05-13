@@ -1,22 +1,26 @@
 state={
-	id=262
-	name="STATE_262"
-	provinces={
-		429 1037 1089 1388 2343 2354 2363 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-	resources = {
-		steel = 10
-        tungsten = 7
-		chromium = 15
+    id=262
+    name="STATE_262"
+    provinces={
+        429 1037 1089 1388 2343 2354 2363
     }
-history={
-victory_points = { 2354 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = MGC
-		add_core_of = MGC
-		}
+    manpower=11000
+    buildings_max_level_factor=1.000
+    state_category=town
+    resources={
+        steel=10
+        tungsten=7
+        chromium=15
+    }
+    history={
+        victory_points={
+            2354 1
+        }
+        buildings={
+            industrial_complex=1
+            infrastructure=2
+        }
+        owner=VAL
+        add_core_of=VAL
+    }
 }

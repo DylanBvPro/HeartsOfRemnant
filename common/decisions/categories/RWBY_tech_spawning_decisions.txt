@@ -1,0 +1,6 @@
+tech_spawning_decisions = {
+	visible = {
+		always=yes
+	}
+	icon=GFX_placeholder
+}

@@ -1,0 +1,8 @@
+unit_medals = {
+    placeholder_medal={
+        available = {always=yes}
+        frame=1
+        icon=GFX_placeholder
+        cost=1
+    }
+}

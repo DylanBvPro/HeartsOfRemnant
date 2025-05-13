@@ -1,0 +1,3 @@
+worked_on_this_mod = {
+	possible = {is_debug = yes}
+}

@@ -1,0 +1,41 @@
+capital = 8
+
+#oob = "GRM_100"
+
+# Starting tech
+#set_technology = {}
+
+recruit_character = GRM_Salem
+set_convoys = 10
+
+set_popularities = {
+        democracy = 0
+        tribalism = 0
+        grimms_influence = 100
+        monarchist = 0
+        humans_first = 0
+        faunus_first = 0
+        # = 0
+
+}
+
+set_politics = {
+	
+	ruling_party = grimms_influence
+	last_election = "100.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+110.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	#
+	
+	#oob = "GRM_100"
+	set_technology = {
+placeholder_tech_1 = 1
+	}
+}
+

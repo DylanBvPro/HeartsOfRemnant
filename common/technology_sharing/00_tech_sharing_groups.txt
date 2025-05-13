@@ -1,0 +1,14 @@
+technology_sharing_group = {
+
+	id = placeholder_technology_sharing_group
+	name = placeholder_technology_sharing_group_name
+	desc = placeholder_technology_sharing_group_desc
+	picture = GFX_placeholder
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+		always = yes
+    }
+
+}

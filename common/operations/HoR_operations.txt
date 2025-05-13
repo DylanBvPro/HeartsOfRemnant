@@ -1,0 +1,54 @@
+operation_placeholder = {
+	icon = GFX_placeholder
+	name = operation_placeholder_name
+	desc = operation_placeholder_desc
+	priority = 1
+	days = 1
+	danger_level = 1
+	operatives = 1
+	network_strength = 1
+
+	phases = {
+		placeholder_phase = {base = 100}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+
+	allowed = {
+		always = yes
+	}
+	available = {
+		always = yes
+	}
+
+	target_type = strategic_region
+	equipment = {
+		placeholder_equipment_archetype = 1
+	}
+	return_on_complete = no
+
+	outcome_potential = {
+		FROM = {
+			stability_factor = -0.01
+		}
+		ROOT = {
+			stability_factor = 0.01
+		}
+	}
+	outcome_extra_chance = 1
+	outcome_modifiers = {}
+	outcome_execute = {
+		FROM = {
+			stability_factor = -0.01
+		}
+	}
+	outcome_extra_execute = {
+		FROM = {
+			stability_factor = -0.01
+		}
+	}
+	visible = {always = yes}
+
+}

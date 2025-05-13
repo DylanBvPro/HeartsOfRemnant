@@ -1,0 +1,988 @@
+grimm_major_scorer = { #Finds biggest Grimm
+    # Valid example of mission scorer:
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				tag = GRM # If Dark Lands is still Grimm, they are something to be vary about - always 
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = grimms_influence }
+				factor = 0 
+			}
+			modifier = {
+				exists = no 
+				factor = 0
+			}
+		}
+	}
+}
+democratic_major_scorer = { # Finds biggest Democratic Nation
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				tag = VAL # If Vale is still democratic, they should have preference
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = democracy }
+				factor = 0 
+			}
+		}
+	}
+}
+
+monarchist_major_scorer = { # Finds biggest monarchist
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				tag = VAC # If the Kingdom of Vacup is still monarchist, they are something to be vary about - always 
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = monarchist }
+				factor = 0 
+			}
+		}
+	}
+}
+
+faunus_first_major_scorer = { # Finds biggest Faunus First
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = faunus_first }
+				factor = 0 
+			}
+		}
+	}
+}
+
+local_grimm_country = {
+	# Valid example of mission scorer:
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			
+			modifier = {
+				is_major = yes
+				factor = 10
+			}
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}
+			# Add total number of Divisions 
+			modifier = {
+				always = yes
+				add = num_armies 
+			}
+			modifier = {
+				tag = GRM # If the Dark Lands are still Grimm, they are something to be vary about - always 
+				factor = 1.8
+			}
+			# If neighbor, more scary
+			modifier = {
+				is_neighbor_of = FROM
+				factor = 2
+			}
+			# Same continent also more scary
+			modifier = {
+				OR = {
+					AND = {
+						THIS.capital_scope = { is_on_continent = sanus }
+						FROM.capital_scope = { is_on_continent = sanus }
+					}
+					AND = {
+						THIS.capital_scope = { is_on_continent = anima }
+						FROM.capital_scope = { is_on_continent = anima }
+					}
+					AND = {
+						THIS.capital_scope = { is_on_continent = solitas }
+						FROM.capital_scope = { is_on_continent = solitas }
+					}
+					AND = {
+						THIS.capital_scope = { is_on_continent = menagerie }
+						FROM.capital_scope = { is_on_continent = menagerie }
+					}
+					AND = {
+						THIS.capital_scope = { is_on_continent = draco }
+						FROM.capital_scope = { is_on_continent = draco }
+					}
+				}
+				factor = 3
+			}
+			modifier = {
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				NOT = { has_government = grimms_influence }
+				factor = 0 
+			}
+		}
+	}
+}
+
+grimm_bully_scorer = { #Finds meanest grimm
+    # Valid example of mission scorer:
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}
+			modifier = {
+				tag = GRM # If the Dark Lands are still Grimm, they are something to be vary about - always 
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 100
+			}
+			modifier = {
+				NOT = { has_government = grimms_influence }
+				factor = 0 
+			}
+		}
+	}
+}
+democratic_faction_leader_scorer = { # Finds biggest Democratic Nation
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				tag = VAL # If Vale is still democratic, they should have preference
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = no 
+				factor = 0.1
+			}
+			modifier = {
+				NOT = { has_government = democracy }
+				factor = 0 
+			}
+		}
+	}
+}
+
+democratic_sleeping_giant_scorer = { #Finds the least armed big democratic country. 
+ 	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			# Add total number of Divisions 
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				always = yes 
+				add = -num_armies
+			}
+			modifier = {
+				always = yes 
+				add = -has_added_tension_amount
+			}        
+			modifier = {
+				tag = VAL # If the Vale is still democratic, they should have preference
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				add = 30
+			}
+			modifier = {
+				is_faction_leader = yes 
+				factor = 0.5
+			}
+			modifier = {
+				NOT = { has_government = democracy }
+				factor = 0 
+			}
+		}
+	}   
+}
+
+
+###################################################
+###########       BY CONTINTENT     ###############
+###################################################
+
+sanus_grimm_major_scorer = { #Finds biggest Grimm in Sanus
+    # Valid example of mission scorer:
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = grimms_influence }
+				factor = 0 
+			}
+			modifier = {
+				NOT = { THIS.capital_scope = { is_on_continent = sanus } }
+				factor = 0
+			}
+		}
+	}
+}
+
+sanus_democratic_major_scorer = { # Finds biggest Democratic Nation in Sanus
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				tag = VAL # If Vale is still democratic, they should have preference
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = democracy }
+				factor = 0 
+			}
+			modifier = {
+				NOT = { THIS.capital_scope = { is_on_continent = sanus } }
+				factor = 0
+			}
+		}
+	}
+}
+
+sanus_monarchist_major_scorer = { # Finds biggest Monarchist in Sanus
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				tag = VAC # If the Kingdom of Vacuo is still monarchist, they are something to be vary about - always 
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = monarchist }
+				factor = 0 
+			}
+			modifier = {
+				NOT = { THIS.capital_scope = { is_on_continent = sanus } }
+				factor = 0 
+			}
+		}
+	}
+}
+
+sanus_faunus_first_major_scorer = { # Finds biggest Faunus First in Sanus
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = faunus_first }
+				factor = 0 
+			}
+			modifier = {
+				NOT = { THIS.capital_scope = { is_on_continent = sanus } }
+				factor = 0 
+			}
+		}
+	}
+}
+
+anima_grimm_major_scorer = { #Finds biggest Fascist in Anima
+    # Valid example of mission scorer:
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = grimms_influence }
+				factor = 0 
+			}
+			modifier = {
+	
+					NOT = { THIS.capital_scope = { is_on_continent = anima } } 
+				
+				factor = 0
+			}
+		}
+	}
+}
+
+anima_democratic_major_scorer = { # Finds biggest Democratic Nation in Anima
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = 	{ has_government = democracy }				
+				factor = 0 
+			}
+			modifier = {
+	
+					NOT = { THIS.capital_scope = { is_on_continent = anima } } 
+				
+				factor = 0
+			}
+		}
+	}
+}
+
+anima_monarchist_major_scorer = { # Finds biggest Monarchist in Anima
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				tag = MIS # If Mistral is still monarchist, they should have preference 
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = monarchist }
+				factor = 0 
+			}
+			modifier = {
+	
+					NOT = { THIS.capital_scope = { is_on_continent = anima } } 
+				
+				factor = 0
+			}
+		}
+	}
+}
+
+anima_faunus_first_major_scorer = { # Finds biggest Faunus First in Anima
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = faunus_first }
+				factor = 0 
+			}
+			modifier = {
+	
+					NOT = { THIS.capital_scope = { is_on_continent = anima } } 
+				
+				factor = 0
+			}
+		}
+	}
+}
+
+solitas_grimm_major_scorer = { #Finds biggest Grimm in Solitas
+    # Valid example of mission scorer:
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				is_faction_leader = yes 
+				add = 50
+			}
+			modifier = {
+				NOT = { has_government = grimms_influence }
+				factor = 0 
+			}
+			modifier = {	 
+				NOT = { THIS.capital_scope = { is_on_continent = solitas } } 
+				factor = 0
+			}
+		}
+	}
+}
+
+solitas_democratic_major_scorer = { # Finds biggest Democratic Nation in Solitas
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				NOT = 	{ has_government = democracy }				
+				factor = 0 
+			}
+			modifier = {
+					NOT = { THIS.capital_scope = { is_on_continent = solitas } } 
+				factor = 0 
+			}
+		}
+	}
+}
+
+solitas_monarchist_major_scorer = { # Finds biggest Monarchist in Solitas
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				NOT = { has_government = monarchist }
+				factor = 0 
+			}
+			modifier = {
+				NOT = { THIS.capital_scope = { is_on_continent = solitas } } 
+			factor = 0 
+		}
+		}
+	}
+}
+
+solitas_faunus_first_major_scorer = { # Finds biggest Faunus First in Solitas
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 1
+			# Add tension added by country
+			modifier = {
+				always = yes 
+				add = has_added_tension_amount
+			}        
+			# Add total number of Divisions 
+			modifier = {
+				always = yes 
+				add = num_armies
+			}
+			# add factories
+			modifier = {
+				always = yes 
+				add = num_of_factories
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+			modifier = {
+				NOT = { has_government = faunus_first }
+				factor = 0 
+			}
+			modifier = {
+				NOT = { THIS.capital_scope = { is_on_continent = solitas } } 
+			factor = 0 
+		}
+		}
+	}
+}

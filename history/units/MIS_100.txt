@@ -54,5 +54,5 @@ division_template = {
 
 #Spawn units
 units = {
-    
+
 }

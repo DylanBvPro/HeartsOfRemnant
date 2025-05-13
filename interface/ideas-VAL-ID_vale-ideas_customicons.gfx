@@ -1,0 +1,45 @@
+spriteTypes = { 
+	##Icon For: The Warrior King
+	SpriteType = { 
+		name = "GFX_idea_VAL-ID_the_warrior_king-1477"
+		texturefile = "gfx/interface/ideas/vale-ideas-ideas/VAL-ID_the_warrior_king-1477.dds"
+	}
+
+	##Icon For: Mandatory Colonial Training
+	SpriteType = { 
+		name = "GFX_idea_VAL-ID_mandatory_colonial_training-644441"
+		texturefile = "gfx/interface/ideas/vale-ideas-ideas/VAL-ID_mandatory_colonial_training-644441.dds"
+	}
+
+	##Icon For: A School For Scholars
+	SpriteType = { 
+		name = "GFX_idea_VAL-ID_a_school_for_scholars-1091"
+		texturefile = "gfx/interface/ideas/vale-ideas-ideas/VAL-ID_a_school_for_scholars-1091.dds"
+	}
+
+	##Icon For: A School For Warriors
+	SpriteType = { 
+		name = "GFX_idea_VAL-ID_a_school_for_warriors-1793"
+		texturefile = "gfx/interface/ideas/vale-ideas-ideas/VAL-ID_a_school_for_warriors-1793.dds"
+	}
+
+	##Icon For: Fight For Our Home
+	SpriteType = { 
+		name = "GFX_idea_VAL-ID_fight_for_our_home-1084"
+		texturefile = "gfx/interface/ideas/vale-ideas-ideas/VAL-ID_fight_for_our_home-1084.dds"
+	}
+
+	##Icon For: One Final Push
+	SpriteType = { 
+		name = "GFX_idea_VAL-ID_one_final_push-1122"
+		texturefile = "gfx/interface/ideas/vale-ideas-ideas/VAL-ID_one_final_push-1122.dds"
+	}
+
+	##Icon For: Enlistment Boom
+	SpriteType = { 
+		name = "GFX_idea_VAL-ID_enlistment_boom-1084"
+		texturefile = "gfx/interface/ideas/vale-ideas-ideas/VAL-ID_enlistment_boom-1084.dds"
+	}
+
+ 
+ }

@@ -1,17 +1,22 @@
 state={
-	id=217
-	name="STATE_217"
-	provinces={
-		45 648 740 882 2421 2426 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-history={
-victory_points = { 648 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = DDS
-		add_core_of = DDS
-	}
+    id=217
+    name="STATE_217"
+    provinces={
+        45 882 2421 2426
+    }
+    manpower=12000
+    buildings_max_level_factor=1.000
+    state_category=town
+    history={
+        victory_points={
+            45 5
+        }
+        buildings={
+            infrastructure=2
+            arms_factory=1
+            industrial_complex=1
+        }
+        owner=VAC
+        add_core_of=VAC
+    }
 }

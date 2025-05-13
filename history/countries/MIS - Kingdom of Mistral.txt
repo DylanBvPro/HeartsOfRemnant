@@ -1,6 +1,6 @@
 ﻿capital = 62
 
-#oob = "MIS_100"
+oob = "MIS_100"
 
 # Starting tech
 set_technology = {
@@ -30,6 +30,4 @@ set_politics = {
 	elections_allowed = no
 }
 
-}
-
-recruit_character = MIS_leader
+recruit_character = mistral_queen_of_mistral

@@ -1,0 +1,77 @@
+# Mistral Responds to Vale's Decision - Supports Talks
+country_event = {
+	id = MIS_mistral_supports_talks
+	title = "Mistral Supports Vale's Talks"
+	desc = "Despite past tensions, Vale's decision to pursue diplomacy has been met with approval in Mistral. This may open the door to deeper cooperation, though some remain wary."
+
+	picture = GFX_report_event_generic_diplomacy
+
+	is_triggered_only = yes
+	trigger = {
+		# This event is triggered if Vale chose to pursue talks
+		has_focus = VAL_open_talks_with_mistral
+	}
+
+	option = {
+		name = "This is a step in the right direction."
+		# Effects for Mistral agreeing with Vale's approach
+		add_political_power = 50
+		increase_stability = 0.03
+		improve_relations_with_Vale = 1.0
+	}
+}
+
+# Mistral Responds to Vale's Decision - Cautious Approach
+country_event = {
+	id = MIS_mistral_cautious_approach
+	title = "Mistral Questions Vale's Hesitation"
+	desc = "Vale's cautious stance has led to uncertainty in Mistral. While diplomatic channels remain open, trust has been strained, and further negotiations may be more difficult."
+
+	picture = GFX_report_event_generic_diplomacy
+
+	is_triggered_only = yes
+	trigger = {
+		# This event is triggered if Vale chose to remain cautious
+		has_focus = VAL_open_talks_with_mistral
+	}
+
+	option = {
+		name = "This hesitation is concerning."
+		# Effects for Mistral being cautious
+		add_political_power = -25
+		decrease_stability = 0.02
+		improve_relations_with_Vale = -0.5
+	}
+}
+
+# Mistral Responds to Vale's Decision - Aggressive Threat
+country_event = {
+	id = MIS_mistral_responds_to_threat
+	title = "Mistral Reacts to Vale's Threat"
+	desc = "Vale's aggressive posture has sent shockwaves through Mistral. Leaders debate whether to respond diplomatically or prepare for potential escalation. The future of our relations hangs in the balance."
+
+	picture = GFX_report_event_generic_diplomacy
+
+	is_triggered_only = yes
+	trigger = {
+		# This event is triggered if Vale chose to threaten Mistral
+		has_focus = VAL_open_talks_with_mistral
+	}
+
+	option = {
+		name = "This will not be ignored."
+		# Effects for Mistral responding harshly
+		add_political_power = 30
+		decrease_stability = 0.05
+		worsen_relations_with_Vale = 1.0
+		military_preparation = 1
+	}
+
+	option = {
+		name = "We must avoid escalation."
+		# Effects for Mistral attempting to de-escalate
+		add_political_power = -20
+		decrease_stability = 0.03
+		improve_relations_with_Vale = -0.5
+	}
+}

@@ -1,0 +1,52 @@
+equipments = {
+	placeholder_convoy_equipment_archetype = {
+		year = 1
+		picture = GFX_placeholder
+		can_be_produced = {
+			always = yes
+		}
+
+		is_archetype = yes
+		is_buildable = yes
+		active = yes
+
+		type = convoy
+
+		group_by = archetype
+		interface_category = interface_category_other_ships
+	}
+	placeholder_convoy_equipment = {
+		year = 1
+
+		active = yes
+
+		archetype = placeholder_convoy_equipment_archetype
+		priority = 1
+		visual_level = 1
+
+		resources = {
+			steel = 1
+		}
+
+		build_cost_ic = 1
+		manpower = 1
+		can_license = no
+		is_convertable = no
+
+		naval_speed = 1
+		lg_armor_piercing = 1
+		lg_attack = 1
+		hg_armor_piercing = 1
+		hg_attack = 1
+		torpedo_attack = 1
+		anti_air_attack = 1
+		surface_detection = 1
+		sub_attack = 1
+		surface_visibility = 1
+		naval_range = 1
+		port_capacity_usage = 1
+		search_and_destroy_coordination = 1
+		convoy_raiding_coordination = 1
+
+	}
+}

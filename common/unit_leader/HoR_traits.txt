@@ -1,0 +1,14 @@
+	leader_traits = {
+		placeholder_trait = {
+			type = all
+			trait_type = basic_trait
+			modifier = {
+				experience_gain_factor = 0.01
+			}
+			new_commander_weight = {
+				base = 1
+			}
+
+		}
+	
+	}
