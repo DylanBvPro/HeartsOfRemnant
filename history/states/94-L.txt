@@ -2,7 +2,9 @@ state = {
     id = 94
     name = "STATE_94"
     provinces = {354 539 865 1018 1198 1207 1427 1481 1720 1722 2050 2068 2072}
+
     manpower = 12700
+
     buildings_max_level_factor = 1.000
     state_category = town
     victory_points = {354 5}
@@ -13,7 +15,9 @@ state = {
         owner = CRT
         add_core_of = CRT
         buildings = {
+
             infrastructure = 1
+
             arms_factory = 1
             industrial_complex = 1
         }

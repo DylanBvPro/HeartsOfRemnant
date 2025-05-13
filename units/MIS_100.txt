@@ -54,5 +54,40 @@ division_template = {
 
 #Spawn units
 units = {
-  
+	division = {
+		name = "Mistral Hunter Killer Brigade"
+		location = 961
+		division_template = "Hunter Killer Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "1st Mistral Suppression Division"
+		location = 412
+		division_template = "Mistral Suppression Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd Mistral Suppression Division"
+		location = 1715
+		division_template = "Mistral Suppression Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}    
+	division = {
+		name = "3rd Mistral Suppression Division"
+		location = 1802
+		division_template = "Mistral Suppression Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th Mistral Suppression Division"
+		location = 1333
+		division_template = "Mistral Suppression Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}    
+
 }
