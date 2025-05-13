@@ -1,8 +1,7 @@
 ﻿l_english:
 grimms_influence:0 "Grimms Influence"
-grimms_influence_noun:0 "GrimmNOUN"
-grimms_influence_desc:0 "Animalism"
+grimms_influence_desc:0 "The creatures of Grimm are monsters with the sole goal to wipe out humanity.  The creatures of Grimm are attracted to negative emotions. Their influence can be felt through all walks of life, but if the influence grows too much they will cause the collapse of the kingdoms and panic will grip the land."
 pack_system:0 "Pack System"
 pack_system_desc:0 "A pack of Grimm, often with an alpha as a leader."
-salem:0 "Salem's Teachings"
-salem_desc:0 "Salem imposes her teachings on the Grimm."
+salem:0 "Salem"
+salem_desc:0 "Salem is the queen of grimm."

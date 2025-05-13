@@ -1,22 +1,35 @@
 state={
-	id=71
-	name="STATE_71"
-	provinces={
-		128 579 745 1160 1745 1766 1946 
-	}
-	manpower=5689
-state_category = town
-	buildings_max_level_factor=1.000
-		history={
-victory_points = { 1745 1 }
-		owner = ATL
-		
-		add_core_of = ATL
-   buildings = {
-arms_factory = 1
-industrial_complex = 1
-infrastructure = 2
+    id=71
+    name="STATE_71"
+    provinces={
+        128 579 745 1160 1745 1766 1946
+    }
+    manpower=127000
+    state_category=metropolis
+    buildings_max_level_factor=1.000
+	resources={
+        steel=20
+		tungsten=10
+    }
+    history={
+        victory_points={
+            1745 25
+        }
+		victory_points={
+            1766 2
+        }
+        owner=ATL
+        add_core_of=ATL
+        buildings={
+            arms_factory=2
+            industrial_complex=2
+            infrastructure=3
+            dockyard=2
+            1766={
+                coastal_bunker=2
+                naval_base=2
+            }
+        }
+    }
+}
 
-}
-	}	
-}

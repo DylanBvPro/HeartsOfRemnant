@@ -1,17 +1,23 @@
-state={
-	id=132
-	name="STATE_132"
-	provinces={
-		319 1461 1518 2405 2415 2420 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-history={
-victory_points = { 2415 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = MCC
-		add_core_of = MCC
-	}
+state = {
+    id = 132
+    name = "STATE_132"
+    provinces = {319 1461 1518 2405 2415 2420}
+    manpower = 19700
+    buildings_max_level_factor = 1.000
+    state_category = large_town
+    resources = {
+        tungsten = 5
+        aluminium = 5
+        chromium = 7
+    }
+    history = {
+        victory_points = {2415 5}
+        buildings = {
+            industrial_complex = 1
+            arms_factory = 1
+            infrastructure = 2
+        }
+        owner = MCC
+        add_core_of = MCC
+    }
 }

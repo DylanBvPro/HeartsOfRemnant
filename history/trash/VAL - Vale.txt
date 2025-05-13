@@ -1,0 +1,53 @@
+﻿##oob = "VAL_100"
+capital = 46
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 50
+
+recruit_character = VAL_king
+
+#For start date 100.1.1
+100.1.1 = {
+	add_political_power = 1000
+	recruit_character = VAL_king
+	#oob = "VAL_100"
+#Politics for 100.1.1
+set_politics = {
+	ruling_party = democracy
+	last_election = "1935.1.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	tribalism = 0
+	humans_first = 0
+	monarchist = 75
+	faunus_first = 0
+	democracy = 25
+	grimms_influence = 0
+}
+create_country_leader = {
+	name = "Édouard Daladier"
+	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	picture = "Portrait_France_Edouard_Daladier.dds"
+	expire = "1965.1.1"
+	ideology = imperial_rule_
+
+}
+}
+
+
+
+
+recruit_character = Generic
+
+#recruit_character = oz
+#recruit_character = haley_barrick
+#recruit_character = lec_graz
+#recruit_character = john_forgrave
+#recruit_character = tailen_henford
+#recruit_character = grimm
+
+}
+

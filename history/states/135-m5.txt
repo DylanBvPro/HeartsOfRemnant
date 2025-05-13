@@ -1,17 +1,21 @@
-state={
-	id=135
-	name="STATE_135"
-	provinces={
-		1083 1323 1483 2444 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-history={
-victory_points = { 1083 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = MCC
-		add_core_of = MCC
-	}
+state = {
+    id = 135
+    name = "STATE_135"
+    provinces = {1083 1323 1483 2444}
+    manpower = 11700
+    buildings_max_level_factor = 1.000
+    state_category = town
+    resources = {
+        rubber = 10
+        oil = 10
+    }
+    history = {
+        victory_points = {1083 1}
+        buildings = {
+            industrial_complex = 1
+            infrastructure = 2
+        }
+        owner = MCC
+        add_core_of = MCC
+    }
 }

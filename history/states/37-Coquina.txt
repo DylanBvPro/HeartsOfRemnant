@@ -1,18 +1,17 @@
-state={
-	id=37
-	name="STATE_37"
-	provinces={
-		562 716 1351 1434 1655 1656 2387 2391 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-        history={
-victory_points = { 562 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = VAC
-		
-		add_core_of = VAC
-	}
+state = {
+    id = 37
+    name = "STATE_37"
+    provinces = {562 716 1351 1434 1655 1656 2387 2391}
+    manpower = 13500
+    buildings_max_level_factor = 1.000
+    state_category = town
+    victory_points = {562 1}
+    history = {
+        buildings = {
+            industrial_complex = 1
+            infrastructure = 2
+        }
+        owner = VAC
+        add_core_of = VAC
+    }
 }

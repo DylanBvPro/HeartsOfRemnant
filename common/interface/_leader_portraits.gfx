@@ -21,5 +21,6 @@ spriteTypes = {
 		name = "GFX_portrait_europe_generic_4"
 		texturefile = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
 	}
+	
 
 }

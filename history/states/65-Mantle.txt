@@ -1,23 +1,33 @@
 state={
-	id=65
-	name="STATE_65"
-	provinces={
-		604 724 809 1705 1959 1963 1966 1967 1971 
-	}
-	manpower=20000
-	buildings_max_level_factor=1.000
-	state_category = large_city
-			history={
-		owner = ATL
-		victory_points = { 1705 25 }
-		add_core_of = ATL
-        buildings = {
-arms_factory = 2
-industrial_complex = 3
-infrastructure = 5
-air_base = 2
-anti_air_building = 2
+    id=65
+    name="STATE_65"
+    provinces={
+        604 724 809 1705 1959 1963 1966 1967 1971
+    }
+    manpower=32500
+    buildings_max_level_factor=1.000
+    state_category=large_city
+    resources={
+        steel=5
+        tungsten=5
+        aluminium=5
+    }
+    history={
+        owner=ATL
+        victory_points={
+            1705 5
+        }
+        add_core_of=ATL
+        buildings={
+            arms_factory=2
+            industrial_complex=3
+            infrastructure=3
+			dockyard=2
+            809={
+                coastal_bunker=2
+                naval_base=3
+            }
+        }
+    }
+}
 
-}
-	}
-}

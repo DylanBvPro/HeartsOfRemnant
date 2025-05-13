@@ -1,17 +1,22 @@
-state={
-	id=57
-	name="STATE_57"
-	provinces={
-		472 1105 1667 2018 2037 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-		history={
-victory_points = { 1105 1 }
-		owner = MNC
-buildings = { 
-infrastructure = 2 }
-		add_core_of = MNC
-	}		
+state = {
+    id = 57
+    name = "STATE_57"
+    provinces = {472 1105 1667 2018 2037}
+    manpower = 13000
+    buildings_max_level_factor = 1.000
+    state_category = large_town
+    resources = {
+        steel = 5
+        tungsten = 10
+    }
+    history = {
+        victory_points = {1105 2}
+        owner = MNC
+        buildings = {
+            industrial_complex = 1
+            arms_factory = 1
+            infrastructure = 2
+        }
+        add_core_of = MNC
+    }
 }

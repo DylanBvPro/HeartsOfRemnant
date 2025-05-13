@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_occupation_policy_half_icon"
+		textureFile = "gfx/interface/occupation/occupation_policy_half_icon.dds"
+	}
+}

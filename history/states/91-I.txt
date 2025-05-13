@@ -1,20 +1,16 @@
-
-state={
-	id=91
-	name="STATE_91"
-	provinces={
-		639 664 838 1497 1606 1786 1929 
-	}
-	manpower=500
-	buildings_max_level_factor=1.000
-	state_category = town
-			history={
-victory_points = { 838 1 }
-		owner = ATL
-		
-		add_core_of = ATL
+state = {
+    id = 91
+    name = "STATE_91"
+    provinces = {639 664 838 1497 1606 1786 1929}
+    manpower = 4700
+    buildings_max_level_factor = 1.000
+    state_category = rural
+    history = {
+        victory_points = {838 1}
+        owner = ATL
+        add_core_of = ATL
         buildings = {
-infrastructure = 2
-}
-	}
+            infrastructure = 1
+        }
+    }
 }

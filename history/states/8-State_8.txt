@@ -1,16 +1,13 @@
-state={
-	id=8
-	name="Evernight Castle"
-	provinces={
-	2314
-	}
-	manpower=5
-    state_category = wasteland	
-	buildings_max_level_factor=1.000
-history={
-		owner = GRM
-			victory_points = { 2314 25 }
-		add_core_of = GRM
-	}
-
+state = {
+    id = 8
+    name = "Evernight Castle"
+    provinces = {2314}
+    manpower = 5
+    state_category = wasteland
+    buildings_max_level_factor = 1.000
+    history = {
+        owner = GRM
+        victory_points = {2314 25}
+        add_core_of = GRM
+    }
 }

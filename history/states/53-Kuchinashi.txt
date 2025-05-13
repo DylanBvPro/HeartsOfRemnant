@@ -1,18 +1,18 @@
-state={
-	id=53
-	name="STATE_53"
-	provinces={
-		73 1632 1791 2218 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-        history={
-victory_points = { 2218 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = MIS
-		
-		add_core_of = MIS
-	}	
+state = {
+    id = 53
+    name = "STATE_53"
+    provinces = {73 1632 1791 2218}
+    manpower = 27000
+    buildings_max_level_factor = 1.000
+    state_category = large_town
+    history = {
+        victory_points = {2218 1}
+        buildings = {
+            industrial_complex = 2
+            arms_factory = 1
+            infrastructure = 2
+        }
+        owner = MIS
+        add_core_of = MIS
+    }
 }

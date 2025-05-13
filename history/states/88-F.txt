@@ -1,17 +1,20 @@
-state={
-	id=88
-	name="STATE_88"
-	provinces={
-		502 759 894 1031 1259 1358 1604 2273 2277 2309 2315 2321 2328 2330 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-	history={
-victory_points = { 502 1 }
-		owner = MCC
-		add_core_of = MCC
-buildings = { 
-infrastructure = 2 }
-	}
+state = {
+    id = 88
+    name = "STATE_88"
+    provinces = {502 759 894 1031 1259 1358 1604 2273 2277 2309 2315 2321 2328 2330}
+    manpower = 8000
+    buildings_max_level_factor = 1.000
+    state_category = rural
+    resources = {
+        steel = 10
+        aluminium = 5
+    }
+    history = {
+        victory_points = {502 1}
+        owner = MCC
+        add_core_of = MCC
+        buildings = {
+            infrastructure = 1
+        }
+    }
 }

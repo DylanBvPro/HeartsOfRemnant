@@ -1,4 +1,5 @@
-﻿XYZ = "countries/Will not show up.txt"
+﻿
+GRM = "countries/Salem's Faction.txt"
 ATL = "countries/Kingdom of Atlas.txt"
 VAL = "countries/Vale.txt"
 VAC = "countries/Kingdom of Vacuo.txt"
@@ -10,7 +11,7 @@ CRI = "countries/Crime Syndicate.txt"
 FAR = "countries/Far Land Villages.txt"
 FAL = "countries/The Fallen Kingdom.txt"
 TLK = "countries/The Lost Kingdom.txt"
-GRM = "countries/Dark Lands.txt"
+
 
 MMH = "countries/Solitas Megoliath Hoard.txt"
 MMM = "countries/Solitas Manticore Hoard.txt"
@@ -53,3 +54,4 @@ CST = "countries/Clan Siliver Tribe.txt"
 DWL = "countries/Dragcis Wyvern's Layer.txt"
 DBP = "countries/Dragcis Beowolves Pack.txt"
 DNN = "countries/Dragcis Nevermore Nest.txt"
+UUP = "countries/Unorganized People.txt"

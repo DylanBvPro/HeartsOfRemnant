@@ -19,6 +19,582 @@ guiTypes = {
 			quadTextureSprite ="GFX_frontend_bg"
 			alwaystransparent = yes
 		}
+		containerWindowType = {
+			name ="frontend_background_tile_01"
+			position = { x=-930 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_01"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_02"
+			position = { x=-870 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_02"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_03"
+			position = { x=-810 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_03"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_04"
+			position = { x=-750 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_04"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_05"
+			position = { x=-690 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_05"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_06"
+			position = { x=-630 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_06"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_07"
+			position = { x=-570 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_07"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_08"
+			position = { x=-510 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_08"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_09"
+			position = { x=-450 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_09"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_10"
+			position = { x=-390 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_10"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_11"
+			position = { x=-330 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_11"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_12"
+			position = { x=-270 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_12"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_13"
+			position = { x=-210 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_13"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_14"
+			position = { x=-150 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_14"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_15"
+			position = { x=-90 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_15"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_16"
+			position = { x=-30 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_16"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_17"
+			position = { x=30 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_17"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_18"
+			position = { x=90 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_18"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_19"
+			position = { x=150 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_19"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_20"
+			position = { x=210 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_20"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_21"
+			position = { x=270 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_21"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_22"
+			position = { x=330 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_22"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_23"
+			position = { x=390 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_23"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_24"
+			position = { x=450 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_24"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_25"
+			position = { x=510 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_25"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_26"
+			position = { x=570 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_26"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_27"
+			position = { x=630 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_27"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_28"
+			position = { x=690 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_28"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_29"
+			position = { x=750 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_29"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_30"
+			position = { x=810 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_30"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_31"
+			position = { x=870 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_31"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name ="frontend_background_tile_32"
+			position = { x=930 y =0 }	
+			size = { 
+				width = 60 
+				height = 1080 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no 
+			
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_frontend_bg_tile_32"
+				alwaystransparent = yes
+			}
+		}
 		
 	}
 	
@@ -95,7 +671,7 @@ guiTypes = {
 	### MAIN MENU PANEL (DLC Ownership) 
 	containerWindowType = {
 		name  ="mainmenu_dlc_ownership"
-		position = { x=5 y =0 }
+		position = { x=5 y =-500 }
 		size = { width = 370 height = 528}
 		Orientation = lower_left
 		origo = lower_left
@@ -111,7 +687,7 @@ guiTypes = {
 		}
 		
 	}
-	
+
 	### MAIN MENU PANEL (upperleft)
 	containerWindowType = {
 		name  ="mainmenu_panel_upperleft"
@@ -126,6 +702,26 @@ guiTypes = {
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
 			position = { x= 20 y = 20 }
+		}
+		instantTextBoxType = {
+			name ="youjosenki_version_label"
+			position = { x = 20 y = 215 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "YS_MOD_VERSION"
+			format = centre
+			maxWidth = 448
+		}
+		instantTextBoxType = {
+			name ="vanilla_version_label"
+			position = { x = 20 y = 240 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "COMPATIBLE_GAME_VERSION"
+			format = centre
+			maxWidth = 448
 		}
 		
 	}
@@ -184,8 +780,8 @@ guiTypes = {
 		name = "mainmenu_single_player"
 		position = { x=0 y =0}
 		size = { width = 320 height = 395}
-		Orientation = CENTER
-		Origo = center	
+		Orientation = lower_left
+		Origo = lower_left
 				
 		background = {
 			name = "Background"		
@@ -280,13 +876,13 @@ guiTypes = {
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
 		position = { x=0 y =0}
-		size = { width = 320 height = 435 }
-		Orientation = CENTER
-		Origo = center		
+		size = { width = 320 height = 395}
+		Orientation = lower_left
+		Origo = lower_left
 
 		positionType = {
 			name = "subscription_size"
-			position = { x = 320 y = 563 }
+			position = { x = 320 y = 395 }
 		}
 				
 		background = {
@@ -324,7 +920,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 35 y = 396 }
+			position = { x = 35 y = 356 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -336,8 +932,9 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 35 y = 524 }
+			position = { x = 35 y = 356 }
 		}
+		
 		
 		
 		ButtonType = {
@@ -350,38 +947,10 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
-		buttonType = {
-			name = "career_profile_button"
-			position = { x = 16 y = 138 }
-			quadTextureSprite ="GFX_main_lobby_button"
-			buttonText = "MENU_BAR_CAREER_PROFILE"
-			buttonFont = "hoi_24header"
-			clicksound = click_default
-			oversound = ui_menu_over
-		}
-		
-		iconType = {
-			name = "career_profile_button_star"
-			position = { x = -37 y = 155 }
-			spriteType = "GFX_icon_best_in_career"
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
-		}
-		
-		buttonType = {
-			name = "friends_button"
-			position = { x = 16 y = 178 }
-			quadTextureSprite ="GFX_main_lobby_button"
-			buttonText = "MENU_BAR_FRIENDS"
-			buttonFont = "hoi_24header"
-			clicksound = click_default
-			oversound = ui_menu_over
-		}
 
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = 16 y = 218 }
+			position = {  x = 16 y = 138 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CREDITS"
 			buttonFont = "hoi_24header"
@@ -391,15 +960,16 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 258 }
+			position = { x = 16 y = 178 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
 		}
+		
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 300 }
+			position = { x = 16 y = 260 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -408,41 +978,32 @@ guiTypes = {
 			
 		}
 
-		iconType = {
-			name = "subscription_divider"
-			position = { x = 4 y = 336 }
-			spriteType = "GFX_main_lobby_divider"
+		
+		ButtonType = {
+			name = "reddit_button"
+			position = { x = 100 y = 309 }
+			quadTextureSprite ="reddit"
+			#clicksound = click_default
+			pdx_tooltip = "MENU_REDDIT"
+			web_link = "https://www.reddit.com/r/YoujoSenki/"
+		}
+		
+		ButtonType = {
+			name = "discord_button"
+			position = { x = 140 y = 309 }
+			quadTextureSprite ="discord"
+			#clicksound = click_default
+			pdx_tooltip = "MENU_DISCORD"
+			web_link = "https://discord.gg/xAyrxRX"
 		}
 
-		containerWindowType = {
-			name = "subscription_widget"
-			position = { x = 16 y = 352 }
-			size = { width = 288 height = 108 }
-
-			ButtonType = {
-				name = "show_subscription"
-				position = { x = 0 y = 0 }
-				quadTextureSprite ="GFX_subscription_widget"
-				buttonText = "SUBSCRIPTION_WIDGET"
-				buttonFont = "hoi_24header"
-				multiline = yes
-			}
-		}
-
-		containerWindowType = {
-			name = "subscription_widget_subscribed"
-			position = { x = 16 y = 352 }
-			size = { width = 288 height = 108 }
-
-			ButtonType = {
-				name = "show_subscription"
-				position = { x = 0 y = 0 }
-				quadTextureSprite ="GFX_subscription_widget_active"
-				frame = 1
-				buttonText = "SUBSCRIPTION_WIDGET_SUBSCRIBED"
-				buttonFont = "hoi_24header"
-				multiline = yes
-			}
+		ButtonType = {
+			name = "workshop_button"
+			position = { x = 180 y = 309 }
+			quadTextureSprite ="workshop"
+			#clicksound = click_default
+			pdx_tooltip = "MENU_WORKSHOP"
+			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=1304402924"
 		}
 	}
 	
@@ -450,22 +1011,17 @@ guiTypes = {
 		name = "mainmenu_social_buttons"
 		position = { x=-50 y=25 }	
 		size = { width = 240 height = 90 }
-		Orientation = center	
-		origo = center
+		Orientation = lower_left	
+		origo = lower_left
 		
 		positionType = {
 			name = "position_without_social_gui"
-			position = { x = 0 y = 175 }
-		}
-
-		positionType = {
-			name = "subscription_position"
-			position = { x = -50 y = 109 }
+			position = { x = 0 y = 155 }
 		}
 
 		positionType = {
 			name = "subscription_position_without_social_gui"
-			position = { x = 0 y = 239 }
+			position = { x = 0 y = 155 }
 		}
 		
 		containerWindowType = {
@@ -515,74 +1071,41 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "homepage_button"
-			position = { x=-24 y=0 }
+			position = { x=0 y=0 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
-			scale = 0.9
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x=12 y=0 }
+			position = { x=50 y=0 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
 			web_link = "http://forum.paradoxplaza.com/forum/forumdisplay.php?844-Hearts-of-Iron-IV"
-			scale = 0.9
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x=48 y=0 }
+			position = { x=100 y=0 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
 			web_link = "https://www.facebook.com/Heartsofiron"
-			scale = 0.9
 		}
 		ButtonType = {
 			name = "twitter_button"
-			position = { x=84 y=0 }
+			position = { x=150 y=0 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
 			web_link = "https://twitter.com/hoi_game"
-			scale = 0.9
-		}
-		ButtonType = {
-			name = "instagram_button"
-			position = { x=120 y=0 }
-			quadTextureSprite ="instagram"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_INSTAGRAM"
-			web_link = "https://www.instagram.com/hearts_of_iron_pdx"
-			scale = 0.9
-		}
-		ButtonType = {
-			name = "discord_button"
-			position = { x=156 y=0 }
-			quadTextureSprite ="discord"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_DISCORD"
-			web_link = "https://discord.gg/hoi4"
-			scale = 0.9
-		}
-
-		ButtonType = {
-			name = "youtube_button"
-			position = { x=192 y=0 }
-			quadTextureSprite ="youtube"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_YOUTUBE"
-			web_link = "https://www.youtube.com/@HeartsOfIronOfficial"
-			scale = 0.9
 		}
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x=228 y=0 } 
+			position = { x=200 y=0 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
-			scale = 0.9
 		}
 	}
 

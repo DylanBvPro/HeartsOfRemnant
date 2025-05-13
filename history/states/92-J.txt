@@ -2,9 +2,9 @@ state = {
 	id = 92
 	name = "STATE_92"
 	provinces = { 22 234 406 613 801 995 1341 1350 1661 2278 2298 2312 }
-	manpower = 5300
+	manpower = 15300
 	buildings_max_level_factor = 1.000
-	state_category = rural
+	state_category = town
 	resources = {
 		aluminium = 10
 		rubber = 6
@@ -14,7 +14,8 @@ state = {
 		owner = VAL
 		add_core_of = VAL
 		buildings = { 
-			infrastructure = 1 
+			arms_factory = 1
+			infrastructure = 2 
 			industrial_complex = 1
 		}
 	}

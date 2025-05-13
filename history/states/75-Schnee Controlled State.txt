@@ -1,21 +1,24 @@
 state={
-	id=75
-	name="STATE_75"
-	provinces={
-		492 1117 1153 1393 1906 1933 1937 
-	}
-	manpower=5000
-	buildings_max_level_factor=1.000
-state_category = large_town
-			history={
-victory_points = { 492 1 }
-		owner = ATL
-		
-		add_core_of = ATL
-        buildings = {
-industrial_complex = 3
-infrastructure = 5
-
-}
-	}
+    id=75
+    name="STATE_75"
+    provinces={
+        492 1117 1153 1393 1906 1933 1937
+    }
+    manpower=5000
+    buildings_max_level_factor=1.000
+    state_category=rural
+	resources={
+		steel = 35
+    }
+    history={
+        victory_points={
+            492 1
+        }
+        owner=ATL
+        add_core_of=ATL
+        buildings={
+            industrial_complex=1
+            infrastructure=1
+        }
+    }
 }

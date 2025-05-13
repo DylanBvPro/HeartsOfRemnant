@@ -1,18 +1,23 @@
 state={
-	id=40
-	name="STATE_40"
-	provinces={
-		47 1500 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-        history={
-victory_points = { 47 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = VAC
-		
-		add_core_of = VAC
-	}
+    id=40
+    name="STATE_40"
+    provinces={
+        47 1500
+    }
+    manpower=4500
+    buildings_max_level_factor=1.000
+    state_category=rural
+    resources={
+        steel=5
+    }
+    history={
+        victory_points={
+            47 1
+        }
+        buildings={
+            infrastructure=1
+        }
+        owner=VAC
+        add_core_of=VAC
+    }
 }

@@ -4,9 +4,9 @@ state={
 	provinces={
 		100 111 1273 1869 
 	}
-	manpower=1000
+	manpower=790
 	buildings_max_level_factor=1.000
-	state_category = town	
+	state_category = rural	
 history={
 victory_points = { 111 1 }
 buildings = { 

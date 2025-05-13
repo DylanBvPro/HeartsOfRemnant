@@ -3,7 +3,11 @@
 #oob = "DNN_100"
 
 # Starting tech
-#set_technology = {}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
 
 100.1.1 = {
 
@@ -14,7 +18,36 @@
 	
 	#oob = "GRM_100"
 	set_technology = {
-placeholder_tech_1 = 1
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
 	}
 }
 
@@ -38,14 +71,26 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-create_country_leader = {
-	
-	name = "Grimm"
-	picture = GFX_portrait_europe_generic_4
-	expire = "1965.1.1"
-	ideology = pack_system
-	traits = {
-		
-	}
+
+# Recruit Characters
+recruit_character = grimm_alpha_alpha_grimm_dnn
+
+starting_train_buffer = 0
+set_research_slots = 1
+set_stability = 0.0
+set_war_support = 1
+add_command_power = 50
+set_convoys = 0
+
+# Government/National Spirits
+add_ideas = {
+	all_adults_serve
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	disarmed_nation
+	civilian_economy
+	TCG_grimm_territory
 }
+
 

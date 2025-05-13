@@ -1,18 +1,15 @@
-state={
-	id=174
-	name="STATE_174"
-	provinces={
-		478 805 829 1128 1630 1863 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-history={
-victory_points = { 478 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = GRM
-		
-		add_core_of = GRM
-	}
+state = {
+    id = 174
+    name = "STATE_174"
+    provinces = {478 805 829 1128 1630 1863}
+    manpower = 1
+    buildings_max_level_factor = 1.000
+    state_category = wasteland
+    history = {
+        buildings = {
+            infrastructure = 1
+        }
+        owner = GRM
+        add_core_of = GRM
+    }
 }

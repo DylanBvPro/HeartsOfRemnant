@@ -2,12 +2,13 @@ state = {
 	id = 7
 	name = "Far Vale"
 	provinces = { 2320 1864 1546 1217 837 2349 }
-	manpower = 9500
-	state_category = rural	
+	manpower = 13500
+	state_category = town	
 	buildings_max_level_factor = 1.000
 	history = {
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			arms_factory = 1
 			industrial_complex = 1
 		}
 		victory_points = { 2320 1 }

@@ -1,24 +1,25 @@
 state={
-	id=70
-	name="STATE_70"
-	provinces={
-		158 614 1179 1332 1449 1942 1944 1949 1954 
-	}
-	manpower=12340
-	buildings_max_level_factor=1.000
-state_category = town
-		history={
-victory_points = { 1949 1 }
-		owner = ATL
-		
-		add_core_of = ATL
- buildings = {
-arms_factory = 1
-industrial_complex = 1
-infrastructure = 5
-air_base = 0
-anti_air_building = 0
-
-}
-	}	
+    id=70
+    name="STATE_70"
+    provinces={
+        158 614 1179 1332 1449 1942 1944 1949 1954
+    }
+    manpower=32340
+    buildings_max_level_factor=1.000
+    state_category=large_city
+	resources={
+        oil=9
+    }
+    history={
+        victory_points={
+            1949 5
+        }
+        owner=ATL
+        add_core_of=ATL
+        buildings={
+            arms_factory=2
+            industrial_complex=2
+            infrastructure=3
+        }
+    }
 }

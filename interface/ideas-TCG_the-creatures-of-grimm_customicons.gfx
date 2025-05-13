@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: Grimm Territory
+	SpriteType = { 
+		name = "GFX_idea_TCG_grimm_territory-1531"
+		texturefile = "gfx/interface/ideas/the-creatures-of-grimm-ideas/TCG_grimm_territory-1531.dds"
+	}
+
+ 
+ }

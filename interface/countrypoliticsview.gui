@@ -990,62 +990,47 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	}
+	
 	containerWindowType = {
-		name = "HoR_political_party_info"
-		position = {x = 80 y = 20}
-		size = {
-			width = 180
-			height = 99
-		}
-		clipping = yes
-		background = {
-			name = HoR_political_party_info_background
-			spriteType = GFX_tiled_window_transparent
-		}
-		verticalScrollbar = right_vertical_slider
-		autohide_scrollbars = no
-		scroll_wheel_factor = 85
-		smooth_scrolling = yes
+		name = "political_party_info_entry"
+		size = { width = 330 height = 18 }
+		clipping = no
 
-		containerWindowType = {
-			name = "political_party_info_entry"
-			size = { width = 330 height = 18 }
-			iconType = {
-				name = "leading_pol_party_bg"
-				position = { x = 60 y = 5 }
-				spriteType = "GFX_leading_pol_party_bg"
-			}		
+		iconType = {
+			name = "leading_pol_party_bg"
+			position = { x = 60 y = 5 }
+			spriteType = "GFX_leading_pol_party_bg"
+		}		
+		
+		iconType = {
+			name = "color_block_bg"
+			position = { x = 60 y = 2 }
+			spriteType = "GFX_pol_party_colour_bg"
+		}
+		
+		iconType = {
+			name = "color_block"
+			position = { x = 64 y = 6 }
+			spriteType = "GFX_pol_party_colour"
+		}
+		
+		#instantTextboxType = {
+		#	name = "score"
+		#	position = { x = 160 y = 4 }
+		#	font = "hoi_16mbs"
+		#	text = "score"
+		#	maxWidth = 60
+		#	maxHeight = 18
+		#}
 			
-			iconType = {
-				name = "color_block_bg"
-				position = { x = 60 y = 2 }
-				spriteType = "GFX_pol_party_colour_bg"
-			}
-			
-			iconType = {
-				name = "color_block"
-				position = { x = 64 y = 6 }
-				spriteType = "GFX_pol_party_colour"
-			}
-			
-			#instantTextboxType = {
-			#	name = "score"
-			#	position = { x = 160 y = 4 }
-			#	font = "hoi_16mbs"
-			#	text = "score"
-			#	maxWidth = 60
-			#	maxHeight = 18
-			#}
-				
-			instantTextboxType = {
-				name = "name"
-				position = { x = 82 y = 4 }
-				font = "hoi_16mbs"
-				text = "party name"
-				fixedsize = yes
-				maxWidth = 175
-				maxHeight = 18
-			}
+		instantTextboxType = {
+			name = "name"
+			position = { x = 82 y = 4 }
+			font = "hoi_16mbs"
+			text = "party name"
+			fixedsize = yes
+			maxWidth = 175
+			maxHeight = 18
 		}
 	}
 	

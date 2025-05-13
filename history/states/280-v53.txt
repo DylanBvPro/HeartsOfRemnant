@@ -1,17 +1,16 @@
-state={
-	id=280
-	name="STATE_280"
-	provinces={
-		847 987 2211 2223 2229 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-history={
-victory_points = { 847 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = MSC
-		add_core_of = MSC
-	}
+state = {
+    id = 280
+    name = "STATE_280"
+    provinces = {847 987 2211 2223 2229}
+    manpower = 8300
+    buildings_max_level_factor = 1.000
+    state_category = town
+    history = {
+        victory_points = {847 1}
+        buildings = {
+            infrastructure = 1
+        }
+        owner = MSC
+        add_core_of = MSC
+    }
 }

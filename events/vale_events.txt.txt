@@ -1,0 +1,202 @@
+# Vale Talks with Mistral
+country_event = {
+	id = VAL_talks_with_mistral
+	title = "Diplomatic Strain: Vale & Mistral"
+	desc = "Despite historical disputes and ongoing tensions, the kingdom of Vale initiates diplomatic talks with Mistral. The road ahead remains uncertain—should we tread carefully to ease Mistral's concerns, seek a balanced compromise, or take a firmer stance?"
+
+	picture = GFX_report_event_generic_diplomacy
+
+	is_triggered_only = yes
+	trigger = {
+		# Condition to fire the event
+		has_focus = VAL_open_talks_with_mistral
+	}
+
+	option = {
+		name = "Appease Mistral to avoid escalation."
+		# Prioritizing diplomacy at the cost of concessions
+		add_political_power = -40
+		improve_relations_with_Mistral = 1.0
+		decrease_stability = 0.20
+		trigger_event = MIS_mistral_supports_talks
+
+		complete_focus = VAL_placate_mistral
+	}
+
+	option = {
+		name = "Seek a fair compromise."
+		# Balancing relations while maintaining Vale's stance
+		add_political_power = -20
+		improve_relations_with_Mistral = 0.5
+		decrease_stability = 0.02
+
+		trigger_event = MIS_mistral_cautious_approach
+
+	}
+
+	option = {
+		name = "Issue a stern warning."
+		# Aggressive diplomatic stance, risking further instability
+		add_political_power = 30
+		increase_stability = 0.10
+		worsen_relations_with_Mistral = 1.0
+
+		trigger_event = MIS_mistral_responds_to_threat
+
+	}
+}
+
+country_event = {
+	id = VAL_alliance_offer_to_vacuo
+	title = "Vale Proposes a Grand Alliance"
+	desc = "The Kingdom of Vale has formed a new alliance—The Grand Alliance—and is seeking our cooperation. We must now decide how to respond."
+
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	show_sound = event_diplomatic
+
+	option = {
+		name = "Join The Grand Alliance"
+		ai_chance = { factor = 60 }
+		join_faction = VAL
+		trigger_event = { id = VAL_vacuo_response_join }
+	}
+
+	option = {
+		name = "Sign a Non-Aggression Pact"
+		ai_chance = { factor = 30 }
+		add_opinion_modifier = { target = VAL modifier = positive_opinion }
+		create_non_aggression_pact = VAL
+		trigger_event = { id = VAL_vacuo_response_nap }
+	}
+
+	option = {
+		name = "Reject the Offer"
+		ai_chance = { factor = 10 }
+		add_opinion_modifier = { target = VAL modifier = negative_opinion }
+		trigger_event = { id = VAL_vacuo_response_reject }
+	}
+}
+
+
+# Event: Colonial Disputes
+country_event = {
+	id = VAL_colonial_disputes_event
+	title = "Colonial Disputes: Work In Progress"
+	desc = "Colonists have been vocal about their concerns, and tensions are rising. What course of action will Vale take?"
+
+	picture = GFX_report_event_generic_diplomacy
+
+	is_triggered_only = yes
+	trigger = {
+		# Ensure this event is triggered after the focus completes
+		has_focus = VAL_colonial_disputes
+	}
+
+	option = {
+		name = "Calm the colonists and ease tensions."
+		# Option for calming the colonists
+		add_political_power = -50
+		increase_stability = 0.05
+		trigger_event = VAL_colonists_calmed
+	}
+
+	option = {
+		name = "Support the colonists' demands."
+		# Option for supporting colonists
+		add_political_power = -30
+		increase_recruitment = 0.10  # Increased recruitment from support
+		trigger_event = VAL_colonists_supported
+	}
+
+	option = {
+		name = "Ignore the colonists' complaints."
+		# Option for ignoring the colonists
+		add_political_power = 20
+		increase_stability = -0.05  # A slight stability decrease due to ignoring the issue
+		trigger_event = VAL_colonists_ignored
+	}
+}
+
+
+country_event = {
+	id = VAL_vacuo_response_join
+	title = "Vacuo Joins the Grand Alliance"
+	desc = "Vacuo has agreed to our proposal and has joined The Grand Alliance. Together, our strength grows."
+	picture = GFX_report_event_generic_alliance
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = VAL_vacuo_response_nap
+	title = "Vacuo Remains Neutral"
+	desc = "Vacuo has declined to join the Grand Alliance but agreed to a non-aggression pact. For now, peace is assured."
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = VAL_vacuo_response_reject
+	title = "Vacuo Rejects the Proposal"
+	desc = "Vacuo has refused to join the alliance or sign a non-aggression pact. Tensions may rise."
+	picture = GFX_report_event_generic_warning
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = VAL_treaty_of_vytal_choice
+	title = "The Treaty of Vytal"
+	desc = "The time has come to decide how Vale will proceed with its newfound dominance. Should we make the kingdoms our dominions, or should we seek to unify them under a shared banner and increase our influence?"
+
+	picture = GFX_report_event_generic_diplomacy
+
+	is_triggered_only = yes
+	trigger = {
+		has_focus = VAL_the_treaty_of_vytal
+	}
+
+	option = {
+		name = "Make the kingdoms our dominions."
+		# Increasing control, no faction yet
+		add_stability = 0.05
+		# Optional: add specific control over the kingdoms here if needed
+		# e.g. give states or events to make them dominions
+		complete_focus = VAL_the_one_to_rule_them_all
+		trigger_event = VAL_mantle_vacuo_mistral_reputation
+	}
+
+	option = {
+		name = "Add them all to our faction."
+		# Forming a faction and increasing reputation with Mantle, Mistral, and Vacuo
+		add_stability = 0.05
+		create_faction = VAL_faction_grand_alliance
+		trigger_event = VAL_mantle_vacuo_mistral_reputation
+		complete_focus = VAL_the_four_kingdoms
+	}
+}
+
+country_event = {
+	id = VAL_mantle_vacuo_mistral_reputation
+	title = "Growing Influence in the Kingdoms"
+	desc = "With our decisive action in the region, we have increased our reputation with Mantle, Mistral, and Vacuo, cementing our role as a leader in the realm."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We are the rightful leaders."
+		# Increasing relations with Mantle, Mistral, and Vacuo
+		improve_relations = {
+			tag = MNT
+			value = 25
+		}
+		improve_relations = {
+			tag = MSTR
+			value = 25
+		}
+		improve_relations = {
+			tag = VAC
+			value = 25
+		}
+	}
+}
+

@@ -1,17 +1,20 @@
-state={
-	id=117
-	name="STATE_117"
-	provinces={
-		125 513 640 909 1097 1343 2003 2012
+state = {
+    id = 117
+    name = "STATE_117"
+    provinces = {125 513 640 909 1097 1343 2003 2012}
+    manpower = 7000
+    buildings_max_level_factor = 1.000
+    state_category = town
+	resources = {
+		tungsten = 5
 	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-history={
-victory_points = { 909 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = MNC
-		add_core_of = MNC
-	}		
+    history = {
+        victory_points = {909 1}
+        buildings = {
+            industrial_complex = 1
+            infrastructure = 1
+        }
+        owner = MNC
+        add_core_of = MNC
+    }
 }

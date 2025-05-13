@@ -1,20 +1,26 @@
 state={
-	id=126
-	name="STATE_126"
-	provinces={
-		179 1017 1086 1260 1284 1651 1749 1904 1910 
-	}
-	manpower=2000
-	buildings_max_level_factor=1.000
-	state_category = rural
-history={
-victory_points = { 1749 1 }
-		owner = ATL
-		
-		add_core_of = ATL
-        buildings = {
-industrial_complex = 1
-infrastructure = 3
-}
-	}
+    id=126
+    name="STATE_126"
+    provinces={
+        179 1017 1086 1260 1284 1651 1749 1904 1910
+    }
+    manpower=5600
+    buildings_max_level_factor=1.000
+    state_category=rural
+    resources={
+        chromium=25
+        tungsten=3
+        steel=3
+    }
+    history={
+        victory_points={
+            1749 1
+        }
+        owner=ATL
+        add_core_of=ATL
+        buildings={
+            industrial_complex=1
+            infrastructure=1
+        }
+    }
 }

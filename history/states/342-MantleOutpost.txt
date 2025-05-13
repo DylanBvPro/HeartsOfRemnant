@@ -1,0 +1,23 @@
+state = {
+    id = 342
+    name = "Mantle Outpost"
+    provinces = {2009}
+    manpower = 11000
+    buildings_max_level_factor = 1.000
+    state_category = city
+    victory_points = {2009 5}
+    history = {
+        owner = ATL
+        add_core_of = ATL
+        buildings = {
+            arms_factory = 1
+            industrial_complex = 1
+            infrastructure = 3
+            dockyard = 1
+            2009 = {
+                coastal_bunker = 2
+                naval_base = 2
+            }
+        }
+    }
+}

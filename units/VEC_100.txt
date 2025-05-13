@@ -1,0 +1,118 @@
+#Create units
+division_template = {
+	name = "Huntsmen Brigade"
+    regiments = {
+        hunter = { x = 0 y = 0 }
+        hunter = { x = 0 y = 1 }
+        hunter = { x = 1 y = 0 }
+        hunter = { x = 1 y = 1 }
+    }
+    support = {
+		logistics = { x = 0 y = 0 }
+    }
+}
+division_template = {
+	name = "Town Garrison"
+    regiments = {
+        guard = { x = 0 y = 0 }
+        guard = { x = 0 y = 1 }
+        guard = { x = 1 y = 0 }
+        guard = { x = 1 y = 1 }
+    }
+    support = {
+    }
+}
+division_template = {
+	name = "Vale Militia"
+    regiments = {
+        rwbymilitia = { x = 0 y = 0 }
+        rwbymilitia = { x = 0 y = 1 }
+        rwbymilitia = { x = 0 y = 2 }
+        rwbymilitia = { x = 0 y = 3 }
+		rwbymilitia = { x = 1 y = 0 }
+    }
+    support = {
+        logistics = { x = 0 y = 0 }
+    }
+}
+
+#Spawn units
+units = {
+	division = {
+		name = "St Bard Guard"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 790
+		division_template = "Town Garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Port Smith Guard"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 474
+		division_template = "Town Garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Sunvila Town Guard"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 462
+		division_template = "Town Garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "New Vale's 1st Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 526
+		division_template = "Vale Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "New Vale's 2nd Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 526
+		division_template = "Vale Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Fort Som Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 198
+		division_template = "Town Garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "South Pake Town Guard"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 462
+		division_template = "Town Garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+}

@@ -1,22 +1,28 @@
 state={
-	id=76
-	name="STATE_76"
-	provinces={
-		402 834 1020 1056 1276 1914 1917 
-	}
-	manpower=7648
-	buildings_max_level_factor=1.000
-state_category = metropolis
-			history={
-victory_points = { 1020 1 }
-		owner = ATL
-		
-		add_core_of = ATL
-        buildings = {
-arms_factory = 2
-industrial_complex = 1
-infrastructure = 4
-air_base = 1
+    id=76
+    name="STATE_76"
+    provinces={
+        402 834 1020 1056 1276 1914 1917
+    }
+    manpower=13648
+    buildings_max_level_factor=1.000
+    state_category=rural
+    resources={
+        chromium=45
+        tungsten=9
+        oil=3
+    }
+    history={
+        victory_points={
+            1020 1
+        }
+        owner=ATL
+        add_core_of=ATL
+        buildings={
+            arms_factory=1
+            industrial_complex=1
+            infrastructure=2
+        }
+    }
 }
-	}
-}
+

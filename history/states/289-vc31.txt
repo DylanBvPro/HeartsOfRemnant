@@ -1,17 +1,20 @@
 state={
-	id=289
-	name="STATE_289"
-	provinces={
-		219 396 454 699 925 2270 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-history={
-victory_points = { 925 1 }
-buildings = { 
-infrastructure = 2 }
-		owner = VAC
-		add_core_of = VAC
-	}
+    id=289
+    name="STATE_289"
+    provinces={
+        219 396 454 699 925 2270
+    }
+    manpower=7300
+    buildings_max_level_factor=1.000
+    state_category=rural
+    history={
+        victory_points={
+            925 1
+        }
+        buildings={
+            infrastructure=1
+        }
+        owner=VAC
+        add_core_of=VAC
+    }
 }

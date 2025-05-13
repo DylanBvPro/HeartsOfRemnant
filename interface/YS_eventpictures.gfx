@@ -1,0 +1,284 @@
+spriteTypes = {
+	
+	## START OF YOUJO EVENTS ##
+	
+	spriteType = { 
+		name = "GFX_youjo_news_event_001"
+		texturefile = "gfx/event_pictures/youjo_news_event_001.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_002"
+		texturefile = "gfx/event_pictures/youjo_news_event_002.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_003"
+		texturefile = "gfx/event_pictures/youjo_news_event_003.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_004"
+		texturefile = "gfx/event_pictures/youjo_news_event_004.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_005"
+		texturefile = "gfx/event_pictures/youjo_news_event_005.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_006"
+		texturefile = "gfx/event_pictures/youjo_news_event_006.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_007"
+		texturefile = "gfx/event_pictures/youjo_news_event_007.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_008"
+		texturefile = "gfx/event_pictures/youjo_news_event_008.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_009"
+		texturefile = "gfx/event_pictures/youjo_news_event_009.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_010"
+		texturefile = "gfx/event_pictures/youjo_news_event_010.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_011"
+		texturefile = "gfx/event_pictures/youjo_news_event_011.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_012"
+		texturefile = "gfx/event_pictures/youjo_news_event_012.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_013"
+		texturefile = "gfx/event_pictures/youjo_news_event_013.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_014"
+		texturefile = "gfx/event_pictures/youjo_news_event_014.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_015"
+		texturefile = "gfx/event_pictures/youjo_news_event_015.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_016"
+		texturefile = "gfx/event_pictures/youjo_news_event_016.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_017"
+		texturefile = "gfx/event_pictures/youjo_news_event_017.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_018"
+		texturefile = "gfx/event_pictures/youjo_news_event_018.dds"
+	}
+	spriteType = { #Has animated version
+		name = "GFX_youjo_news_event_russy_bombed"
+		texturefile = "gfx/event_pictures/youjo_news_event_018.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_internationalist_purge"
+		texturefile = "gfx/event_pictures/youjo_news_event_019.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_020"
+		texturefile = "gfx/event_pictures/youjo_news_event_020.dds"
+	}
+	spriteType = {
+		name = "GFX_youjo_news_event_021"
+		texturefile = "gfx/event_pictures/youjo_news_event_021.dds"
+	}
+	spriteType = { #Has animated version
+		name = "GFX_youjo_news_event_parisii_parade"
+		texturefile = "gfx/event_pictures/youjo_news_event_021.dds"
+	}
+	spriteType = { 
+		name = "GFX_youjo_anti_russy_pact"
+		texturefile = "gfx/event_pictures/youjo_anti_russy_pact.dds"
+	} 
+	spriteType = { 
+		name = "GFX_youjo_berlun_promise"
+		texturefile = "gfx/event_pictures/youjo_berlun_promise.dds"
+	} 
+	spriteType = { 
+		name = "GFX_youjo_europe_trade_agreement"
+		texturefile = "gfx/event_pictures/youjo_europe_trade_agreement.dds"
+	} 
+	spriteType = { 
+		name = "GFX_youjo_istria_crisis"
+		texturefile = "gfx/event_pictures/youjo_istria_crisis.dds"
+	}
+	spriteType = { 
+		name = "GFX_youjo_operation_clause"
+		texturefile = "gfx/event_pictures/youjo_operation_clause.dds"
+	}
+	spriteType = { 
+		name = "GFX_youjo_patrition_yugoslavia"
+		texturefile = "gfx/event_pictures/youjo_patrition_yugoslavia.dds"
+	}
+	spriteType = { 
+		name = "GFX_youjo_purge_army"
+		texturefile = "gfx/event_pictures/youjo_purge_army.dds"
+	} 
+	spriteType = { 
+		name = "GFX_youjo_russy_secret_treaty"
+		texturefile = "gfx/event_pictures/youjo_russy_secret_treaty.dds"
+	} 
+	spriteType = { 
+		name = "GFX_youjo_speech_radio"
+		texturefile = "gfx/event_pictures/youjo_speech_radio.dds"
+	} 
+	spriteType = { 
+		name = "GFX_dacia_joins_the_war"
+		texturefile = "gfx/event_pictures/dacia_joins_the_war.dds"
+	} 
+	spriteType = { 
+		name = "GFX_youjo_emperor_speech"
+		texturefile = "gfx/event_pictures/youjo_emperor_speech.dds"
+	} 
+	spriteType = { 
+		name = "GFX_youjo_anson_flees_to_allied_kingdom"
+		texturefile = "gfx/event_pictures/youjo_anson_flees_to_allied_kingdom.dds"
+	} 
+	
+	## END OF YOUJO EVENTS ##
+
+
+	
+	spriteType = { 
+		name = "GFX_youjo_general_assembly_protest"
+		texturefile = "gfx/event_pictures/youjo_general_assembly_protest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_youjo_general_staff_protest"
+		texturefile = "gfx/event_pictures/youjo_general_staff_protest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_youjo_general_staff_riot"
+		texturefile = "gfx/event_pictures/youjo_general_staff_riot.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_youjo_general_staff_max_outrage"
+		texturefile = "gfx/event_pictures/youjo_general_staff_max_outrage.dds"
+	}
+	############### v3 event pics by Mei
+	spriteType = {
+		name = "GFX_youjo_event__arene_massacre"
+		texturefile = "gfx/event_pictures/youjo_event__arene_massacre.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__arene_revolt"
+		texturefile = "gfx/event_pictures/youjo_event__arene_revolt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__arene_revolt_2"
+		texturefile = "gfx/event_pictures/youjo_event__arene_revolt_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__arene_revolt_3"
+		texturefile = "gfx/event_pictures/youjo_event__arene_revolt_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__berlun_street"
+		texturefile = "gfx/event_pictures/youjo_event__berlun_street.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__burning_building"
+		texturefile = "gfx/event_pictures/youjo_event__burning_building.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_general_staff_max_outrage"
+		texturefile = "gfx/event_pictures/youjo_general_staff_max_outrage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__cathedral_of_vasily_the_blessed"
+		texturefile = "gfx/event_pictures/youjo_event__cathedral_of_vasily_the_blessed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__explosion"
+		texturefile = "gfx/event_pictures/youjo_event__explosion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__francois_republic"
+		texturefile = "gfx/event_pictures/youjo_event__francois_republic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__imperial_hegemony"
+		texturefile = "gfx/event_pictures/youjo_event__imperial_hegemony.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__rhine_magier_battle"
+		texturefile = "gfx/event_pictures/youjo_event__rhine_magier_battle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event__ruined_arene"
+		texturefile = "gfx/event_pictures/youjo_event__ruined_arene.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_aircraft"
+		texturefile = "gfx/event_pictures/youjo_event_aircraft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_anti_air_cannon"
+		texturefile = "gfx/event_pictures/youjo_event_anti_air_cannon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_angry_army"
+		texturefile = "gfx/event_pictures/youjo_event_angry_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_communist_imperial_russy_treaty"
+		texturefile = "gfx/event_pictures/youjo_event_communist_imperial_russy_treaty.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_empire_research_center"
+		texturefile = "gfx/event_pictures/youjo_event_empire_research_center.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_francois_general_council"
+		texturefile = "gfx/event_pictures/youjo_event_francois_general_council.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_high_casualities"
+		texturefile = "gfx/event_pictures/youjo_event_high_casualities.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_russy_army"
+		texturefile = "gfx/event_pictures/youjo_event_russy_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_russy_invasion"
+		texturefile = "gfx/event_pictures/youjo_event_russy_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_youjo_event_tank"
+		texturefile = "gfx/event_pictures/youjo_event_tank.dds"
+	}
+}

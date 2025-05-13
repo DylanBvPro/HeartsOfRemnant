@@ -1,6 +1,6 @@
-#tribalism|People's Republic of [NAME]
-#grimms_influence|[ADJ] Empire
-#monarchist|[NAME]
-#humans_first|[NAME]
-#faunus_first|[NAME]
-#democracy|Republic of [NAME]
+tribalism|People's Republic of [NAME]|
+grimms_influence|[ADJ] Empire|
+monarchist|[NAME]|
+humans_first|[NAME]|
+faunus_first|[NAME]|
+democracy|Republic of [NAME]|

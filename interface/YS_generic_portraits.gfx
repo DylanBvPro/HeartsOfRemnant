@@ -1,0 +1,342 @@
+spriteTypes = {
+
+	### RUS ###
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_1"
+		texturefile = "gfx/leaders/RUS/Portrait_Russy_Generic_Land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_1_small"
+		texturefile = "gfx/interface/ideas/idea_advisor_russy_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_2"
+		texturefile = "gfx/leaders/RUS/Portrait_Russy_Generic_Land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_2_small"
+		texturefile = "gfx/interface/ideas/idea_advisor_russy_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_3"
+		texturefile = "gfx/leaders/RUS/Portrait_Russy_Generic_Land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_3_small"
+		texturefile = "gfx/interface/ideas/idea_advisor_russy_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_4"
+		texturefile = "gfx/leaders/RUS/Portrait_RUS_Generic_Land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_4_small"
+		texturefile = "gfx/interface/ideas/idea_RUS_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_5"
+		texturefile = "gfx/leaders/RUS/Portrait_RUS_Generic_Land_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Land_5_small"
+		texturefile = "gfx/interface/ideas/idea_RUS_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Navy_1"
+		texturefile = "gfx/leaders/RUS/Portrait_Russy_Generic_Navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Navy_1_small"
+		texturefile = "gfx/interface/ideas/idea_advisor_russy_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Navy_2"
+		texturefile = "gfx/leaders/RUS/Portrait_Russy_Generic_Navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Navy_2_small"
+		texturefile = "gfx/interface/ideas/idea_advisor_russy_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Navy_3"
+		texturefile = "gfx/leaders/RUS/Portrait_Russy_Generic_Navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Russy_Generic_Navy_3_small"
+		texturefile = "gfx/interface/ideas/idea_advisor_russy_3.dds"
+	}
+
+	### EMP ###
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_1"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_1_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_2"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_2_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_3"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_3_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_4"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_4_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_5"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_5_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_6"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_6_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_7"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_7.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_7_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_8"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_8.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_8_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_9"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_9.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_9_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_10"
+		texturefile = "gfx/leaders/EMP/Portrait_Fatherland_Generic_Land_10.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Fatherland_Generic_Land_10_small"
+		texturefile = "gfx/interface/ideas/idea_EMP_generic_land_10.dds"
+	}
+
+	### DAC ###
+	spriteType = {
+		name = "GFX_Portrait_Dacia_Generic_Land_1"
+		texturefile = "gfx/leaders/DAC/Portrait_Dacia_Generic_Land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Dacia_Generic_Land_1_small"
+		texturefile = "gfx/interface/ideas/idea_DAC_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Dacia_Generic_Land_2"
+		texturefile = "gfx/leaders/DAC/Portrait_Dacia_Generic_Land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Dacia_Generic_Land_2_small"
+		texturefile = "gfx/interface/ideas/idea_DAC_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Dacia_Generic_Land_3"
+		texturefile = "gfx/leaders/DAC/Portrait_Dacia_Generic_Land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Dacia_Generic_Land_3_small"
+		texturefile = "gfx/interface/ideas/idea_DAC_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Dacia_Generic_Land_4"
+		texturefile = "gfx/leaders/DAC/Portrait_Dacia_Generic_Land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Dacia_Generic_Land_4_small"
+		texturefile = "gfx/interface/ideas/idea_DAC_generic_land_4.dds"
+	}
+
+	### REP ###
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_1"
+		texturefile = "gfx/leaders/REP/Portrait_France_Generic_Land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_1_small"
+		texturefile = "gfx/interface/ideas/idea_REP_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_2"
+		texturefile = "gfx/leaders/REP/Portrait_France_Generic_Land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_2_small"
+		texturefile = "gfx/interface/ideas/idea_REP_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_3"
+		texturefile = "gfx/leaders/REP/Portrait_France_Generic_Land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_3_small"
+		texturefile = "gfx/interface/ideas/idea_REP_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_4"
+		texturefile = "gfx/leaders/REP/Portrait_France_Generic_Land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_4_small"
+		texturefile = "gfx/interface/ideas/idea_REP_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_5"
+		texturefile = "gfx/leaders/REP/Portrait_France_Generic_Land_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_5_small"
+		texturefile = "gfx/interface/ideas/idea_REP_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_6"
+		texturefile = "gfx/leaders/REP/Portrait_France_Generic_Land_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Francois_Generic_Land_6_small"
+		texturefile = "gfx/interface/ideas/idea_REP_generic_land_6.dds"
+	}
+
+	### LEG ###
+	spriteType = {
+		name = "GFX_Portrait_Legadonia_Generic_Land_1"
+		texturefile = "gfx/leaders/LEG/Portrait_LEG_Generic_Land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Legadonia_Generic_Land_1_small"
+		texturefile = "gfx/interface/ideas/idea_LEG_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Legadonia_Generic_Land_2"
+		texturefile = "gfx/leaders/LEG/Portrait_LEG_Generic_Land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Legadonia_Generic_Land_2_small"
+		texturefile = "gfx/interface/ideas/idea_LEG_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Legadonia_Generic_Land_3"
+		texturefile = "gfx/leaders/LEG/Portrait_LEG_Generic_Land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Legadonia_Generic_Land_3_small"
+		texturefile = "gfx/interface/ideas/idea_LEG_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Legadonia_Generic_Land_4"
+		texturefile = "gfx/leaders/LEG/Portrait_LEG_Generic_Land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Legadonia_Generic_Land_4_small"
+		texturefile = "gfx/interface/ideas/idea_LEG_generic_land_4.dds"
+	}
+
+	### ALK ###
+	spriteType = {
+		name = "GFX_Portrait_Albion_Generic_Land_3"
+		texturefile = "gfx/leaders/ALK/Portrait_ALK_Generic_Land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Albion_Generic_Land_3_small"
+		texturefile = "gfx/interface/ideas/idea_ALK_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Albion_Generic_Land_4"
+		texturefile = "gfx/leaders/ALK/Portrait_ALK_Generic_Land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Albion_Generic_Land_4_small"
+		texturefile = "gfx/interface/ideas/idea_ALK_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Albion_Generic_Land_5"
+		texturefile = "gfx/leaders/ALK/Portrait_ALK_Generic_Land_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Albion_Generic_Land_5_small"
+		texturefile = "gfx/interface/ideas/idea_ALK_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Albion_Generic_Land_6"
+		texturefile = "gfx/leaders/ALK/Portrait_ALK_Generic_Land_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Albion_Generic_Land_6_small"
+		texturefile = "gfx/interface/ideas/idea_ALK_generic_land_6.dds"
+	}
+
+	### USA ###
+	spriteType = {
+		name = "GFX_Portrait_USA_Generic_Land_1"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Generic_Land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_USA_Generic_Land_1_small"
+		texturefile = "gfx/interface/ideas/idea_USA_generic_land_1.dds"
+	}
+}

@@ -1,17 +1,24 @@
-state={
-	id=38
-	name="STATE_38"
-	provinces={
-		250 477 606 1595 2336 2341 2353 2367 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-        history={
-buildings = { 
-infrastructure = 2 }
-		owner = VAC
-		victory_points = { 2367 25 }
-		add_core_of = VAC
-	}
+state = {
+    id = 38
+    name = "STATE_38"
+    provinces = {250 477 606, 1595 2336 2341 2353 2367}
+    manpower = 117400
+    buildings_max_level_factor = 1.000
+    state_category = "metropolis"
+    resources = {
+        oil = 50
+        steel = 10
+    }
+    history = {
+        buildings = {
+            industrial_complex = 3
+            arms_factory = 3
+            infrastructure = 3
+        }
+        owner = "VAC"
+        victory_points = {
+            2367 = 25
+        }
+        add_core_of = "VAC"
+    }
 }

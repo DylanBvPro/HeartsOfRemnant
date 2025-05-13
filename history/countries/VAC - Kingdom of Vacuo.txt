@@ -3,7 +3,11 @@
 #oob = "VAC_100"
 
 # Starting tech
-#set_technology = {}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
 
 set_convoys = 10
 
@@ -28,4 +32,5 @@ set_politics = {
 
 
 
-recruit_character = VAC_leader
+recruit_character = vacuo_queen_of_vacuo
+

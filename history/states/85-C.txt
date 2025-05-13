@@ -1,17 +1,27 @@
-state={
-	id=85
-	name="STATE_85"
-	provinces={
-		133 352 387 673 709 836 850 905 1027 1132 1397 1640 1697 1871 2226 2245 2266 2286 2305 
-	}
-	manpower=1000
-	buildings_max_level_factor=1.000
-	state_category = town	
-		history={
-victory_points = { 1697 1 }
-		owner = MIS
-buildings = { 
-infrastructure = 2 }		
-		add_core_of = MIS
-	}	
+state = {
+    id = 85
+    name = "STATE_85"
+    provinces = {133 352 387 673 709 836 850 905 1027 1132 1397 1640 1697 1871 2226 2245 2266 2286 2305}
+    manpower = 11000
+    buildings_max_level_factor = 1.000
+    state_category = town
+    resources = {
+        aluminium = 3
+        rubber = 30
+    }
+    history = {
+        victory_points = {1697 2}
+        victory_points = {2305 1}
+        owner = MIS
+        buildings = {
+            arms_factory = 1
+            industrial_complex = 1
+            infrastructure = 2
+            2305 = {
+                coastal_bunker = 1
+                naval_base = 1
+            }
+        }
+        add_core_of = MIS
+    }
 }
