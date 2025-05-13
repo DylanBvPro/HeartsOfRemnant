@@ -1,0 +1,16 @@
+characters = {
+	#Queen Of Vacuo
+	vacuo_queen_of_vacuo = {
+		name = vacuo_queen_of_vacuo
+		portraits = {
+			civilian = {
+				large = GFX_vacuo_queen_of_vacuo_large
+			}
+		}
+		country_leader = {
+			ideology = monarchistkingdom
+			traits = { popular_queen great_survivor }
+			expire = "130.1.1"
+		}
+	}
+}

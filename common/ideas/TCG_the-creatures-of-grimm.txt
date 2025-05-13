@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+
+		TCG_grimm_territory = {
+			picture = TCG_grimm_territory-1531
+			targeted_modifier = {
+				monthly_population = -0.1
+
+local_manpower = 0.0
+
+local_resources = 0.0
+
+local_supplies = 1.0
+
+research_speed_factor = -10.0
+
+
+			}
+		}
+
+	}
+	economy = {
+
+		TCG_grimm_territory = {
+			picture = TCG_grimm_territory-1061
+			cost = 2000
+			removal_cost = 10000
+			modifier = {
+				local_building_slots_factor = 0.0
+
+local_factories = 0.0
+
+local_resources = 0.0
+
+
+			}
+		}
+
+	}
+	mobilization_laws = {
+
+		TCG_grimm_territory = {
+			picture = TCG_grimm_territory-2039
+			removal_cost = 10000
+			modifier = {
+				local_manpower = 0.0
+
+
+			}
+		}
+	}
+}

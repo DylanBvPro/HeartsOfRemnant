@@ -1,0 +1,16 @@
+characters = {
+	#Queen Of Mistral
+	mistral_queen_of_mistral = {
+		name = mistral_queen_of_mistral
+		portraits = {
+			civilian = {
+				large = GFX_mistral_queen_of_mistral_large
+			}
+		}
+		country_leader = {
+			ideology = imperial_rule_
+			traits = { inexperienced_monarch inexperienced_imperialist chamberlain_appeaser }
+			expire = "130.1.1"
+		}
+	}
+}

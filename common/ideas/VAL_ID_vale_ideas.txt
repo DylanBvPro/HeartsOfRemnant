@@ -1,0 +1,50 @@
+ideas = {
+	country = {
+
+		VAL_ID_mandatory_colonial_training = {
+			picture = VAL_ID_mandatory_colonial_training_644441
+		}
+
+		VAL_ID_a_school_for_scholars = {
+			picture = VAL_ID_a_school_for_scholars_1091
+			allowed = { always = yes }
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		VAL_ID_a_school_for_warriors = {
+			picture = VAL_ID_a_school_for_warriors_1793
+			allowed = { always = yes }
+			modifier = {
+				infantry_attack = 0.05
+				recruitable_population_factor = 0.01
+			}
+		}
+
+		VAL_ID_fight_for_our_home = {
+			picture = VAL_ID_fight_for_our_home_1084
+			name = "Fight For Our Home"
+			description = "The people of Vale are united in defending their homeland."
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				recruitable_population_factor = 0.05
+				surrender_limit = 0.1
+				core_attack = 0.10
+				core_defence = 0.10
+			}
+		}
+
+		VAL_ID_one_final_push = {
+			picture = VAL_ID_one_final_push_1122
+		}
+
+		VAL_ID_enlistment_boom = {
+			picture = VAL_ID_enlistment_boom_1084
+		}
+	}
+
+}

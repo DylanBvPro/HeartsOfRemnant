@@ -1,0 +1,49 @@
+ideologies = {
+	monarchist = {
+		types = {
+			imperial_rule = {  }
+			monarchist = {  }
+		}
+		dynamic_faction_names = {
+			"faction_monarchist_the_royal_dominion"
+			"faction_monarchist_domain_of_kings"
+			"faction_monarchist_the_sovereign_order"
+			"faction_monarchist_the_crowned_alliance"
+			"faction_monarchist_themonarchsguard"
+			"faction_monarchist_the_noble_realm"
+			"faction_monarchist_the_imperial_court"
+			"faction_monarchist_the_majestic_coalition"
+		}
+		color = { 74 77 105 }
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 1
+		faction_modifiers = {
+			faction_impact_on_world_tension = 5
+			faction_trade_opinion_factor = 1
+		}
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+		modifiers = {
+			generate_wargoal_tension = 5
+			join_faction_tension = .5
+			lend_lease_tension = .4
+			send_volunteers_tension = .6
+			guarantee_tension = .4
+			annex_cost_factor = 1
+			civilian_intel_to_others = 5
+			army_intel_to_others = 5
+			navy_intel_to_others = 5
+			airforce_intel_to_others = 5
+			justify_war_goal_when_in_major_war_time = 10
+			increased_influence_factor = 1
+			drift_defence_factor = .1
+		}
+		ai_neutral = yes
+	}
+}

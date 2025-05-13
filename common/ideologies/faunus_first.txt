@@ -1,0 +1,35 @@
+ideologies = {
+	faunus_first = {
+		types = {
+			faunus_only = {  }
+			faunus_overlords = {  }
+		}
+		dynamic_faction_names = {
+		}
+		color = { 176 161 133 }
+		war_impact_on_world_tension = 25
+		faction_modifiers = {
+			faction_impact_on_world_tension = 100
+		}
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+		}
+		modifiers = {
+			generate_wargoal_tension = 10
+			join_faction_tension = 100
+			lend_lease_tension = 100
+			send_volunteers_tension = 100
+			guarantee_tension = 100
+			annex_cost_factor = 50
+			civilian_intel_to_others = 5
+			army_intel_to_others = 5
+			navy_intel_to_others = 5
+			airforce_intel_to_others = 5
+			justify_war_goal_when_in_major_war_time = 10
+			increased_influence_factor = 5
+			drift_defence_factor = 50
+		}
+		ai_neutral = yes
+	}
+}

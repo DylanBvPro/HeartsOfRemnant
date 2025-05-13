@@ -1,0 +1,28 @@
+characters = {
+	#King Of Mantle
+	mantle_king_of_mantle = {
+		name = mantle_king_of_mantle
+		portraits = {
+			civilian = {
+				large = GFX_mantle_king_of_mantle_large
+			}
+			army = {
+				large = GFX_mantle_king_of_mantle_large
+				small = GFX_mantle_king_of_mantle_small
+			}
+		}
+		country_leader = {
+			ideology = imperial_rule_
+			traits = { headstrong rearmer retired_officer }
+			expire = "130.1.1"
+		}
+		field_marshal = {
+			traits = { brilliant_strategist old_guard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

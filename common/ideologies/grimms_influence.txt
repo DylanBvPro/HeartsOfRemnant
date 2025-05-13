@@ -1,0 +1,30 @@
+ideologies = {
+	grimms_influence = {
+		types = {
+			pack_system = {  }
+			salem = {  }
+		}
+		dynamic_faction_names = {
+		}
+		color = { 0 0 0 }
+		war_impact_on_world_tension = 10
+		faction_modifiers = {
+			faction_trade_opinion_factor = -1000
+		}
+		rules = {
+		}
+		modifiers = {
+			generate_wargoal_tension = 5
+			join_faction_tension = 1000
+			lend_lease_tension = 1000
+			send_volunteers_tension = 1000
+			guarantee_tension = 1000
+			army_intel_to_others = 20
+			navy_intel_to_others = 20
+			airforce_intel_to_others = 20
+			justify_war_goal_when_in_major_war_time = 100
+			drift_defence_factor = 1000
+		}
+		ai_neutral = yes
+	}
+}
