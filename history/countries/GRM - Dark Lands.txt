@@ -4,7 +4,9 @@ capital = 8
 
 # Starting tech
 #set_technology = {}
-
+	add_ideas = {
+		placeholder_idea
+	}
 recruit_character = GRM_Salem
 set_convoys = 10
 

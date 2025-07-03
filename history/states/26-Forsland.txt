@@ -6,8 +6,11 @@ state={
 	}
 	manpower=300
 			state_category = rural
-history={
-victory_points = { 655 1 }
+	resources = {
+		placeholder_resource = 1
+	}		
+	history={
+		victory_points = { 655 1 }
 		owner = GRM
 		add_core_of = GRM
 	}

@@ -1,0 +1,28 @@
+placeholder_project_token = {
+	specialization = placeholder_specialization
+	
+	icon = GFX_placeholder
+
+	prototype_time = 10
+
+	resource_cost = {
+		resources = {
+			placeholder_resource = 1
+		}
+	}
+	complexity = 100
+
+	empty_reward_weight = {
+		base = 10
+	}
+
+	ai_will_do = {
+		base = 1
+	}
+		
+	project_output = {
+		country_effects = {
+			set_country_flag = placeholder_project_token_output
+		}
+	}
+}

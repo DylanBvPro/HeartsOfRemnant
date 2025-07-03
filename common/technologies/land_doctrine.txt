@@ -1,0 +1,27 @@
+technologies = {
+	placeholder_land_doctrine_tech = {	
+		doctrine_name = "PLACEHOLDER_LAND_DOCTRINE"
+		
+		xp_research_type = army
+		xp_unlock_cost = 1
+		
+		
+		stability_factor =  0.1
+
+		doctrine = yes	
+		research_cost = 1
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			land_doctrine
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+}

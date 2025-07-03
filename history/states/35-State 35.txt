@@ -8,12 +8,15 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = town	
 	resources = {
-        aluminium = 10
-    }
+		placeholder_resource = 1
+	}
 history={
 	victory_points = { 252 1 }
-buildings = { 
-infrastructure = 2 }
+		buildings = { 
+			infrastructure = 2 
+			arms_factory = 1
+			industrial_complex = 1
+		}
 		owner = EUP
 		add_core_of = EUP
 		}

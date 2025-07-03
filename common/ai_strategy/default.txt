@@ -30,3 +30,71 @@ MIS_befriend_VAL = {
         value = 100
     }
 }
+placeholder_role_ratio = {
+    allowed = {
+        always = yes
+    }
+    enable = {
+        always = yes
+    }
+    abort = {
+        always = no
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = placeholder_role_1
+        value = 50
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = placeholder_role_2
+        value = 10
+    }    
+}
+placeholder_ship_role_ratio = {
+    allowed = {
+        always = yes
+    }
+    enable = {
+        num_of_naval_factories > 0
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = role_ratio
+        id = placeholder_ship_role
+        value = 50
+    }   
+}
+build_civilian_factories_initial = {
+    allowed = {
+        always = yes
+    }
+    enable = {
+        num_of_civilian_factories < 30
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = building_target
+        id = rwby_factory
+        value = 30
+    }
+}
+build_dockyards = {
+    allowed = {
+        always = yes
+    }
+    enable = {
+        num_of_civilian_factories > 29
+        any_controlled_state = {
+            is_coastal = yes
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = building_target
+        id = dockyard
+        value = 5
+    }
+}
+
+

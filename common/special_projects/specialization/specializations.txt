@@ -1,0 +1,5 @@
+placeholder_specialization =  {
+	blueprint_image = GFX_placeholder
+	color = {255 255 255} #White
+	program_background = "GFX_sp_facility_card_bg"
+}

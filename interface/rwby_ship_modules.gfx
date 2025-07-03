@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_EMI_fixed_placeholder_ship_module
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/orange_square.dds"
+	}
+}

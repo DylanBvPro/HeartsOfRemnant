@@ -1,0 +1,12 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_placeholder_tech_1_medium"
+		texturefile = "gfx/interface/technologies/placeholder.dds"
+	}
+}
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_placeholder"
+		texturefile = "gfx/interface/technologies/placeholder.dds"
+	}
+}

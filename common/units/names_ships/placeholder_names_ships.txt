@@ -1,0 +1,9 @@
+PLACEHOLDER = {
+	name = NAME_THEME_PLACEHOLDER
+	for_countries = {VAL}
+	type = ship
+	ship_types = {
+		placeholder_ship_hull
+	}
+	fallback_Name = "Ship %d"
+}

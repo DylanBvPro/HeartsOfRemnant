@@ -1,0 +1,33 @@
+sub_units = {
+	placeholder_armored_vehicle_unit = {
+		abbreviation = "pavu"
+		sprite = light_armor
+		map_icon_category = armored
+		priority = 1
+		ai_priority = 1
+		active = yes
+		training_time = 10
+		
+		type = {armor}
+		group = armored
+		categories = {
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+		}
+		combat_width = 1
+		need = {
+			placeholder_armored_vehicle_equipment = 1
+		}
+		default_morale = 1		
+		manpower = 1
+		max_organisation = 10
+		max_strength = 10
+		supply_consumption = 0.01
+		suppression = 1		
+		weight = 1
+
+
+	}
+}

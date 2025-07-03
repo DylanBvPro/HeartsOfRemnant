@@ -1,0 +1,12 @@
+sub_units = {
+		placeholder_plane = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { placeholder_plane_equipment = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
+	}
+}

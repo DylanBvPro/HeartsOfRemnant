@@ -5,12 +5,10 @@ set_oob = "VAL_100"
 set_research_slots = 3
 
 set_technology = {
-	placeholder_tech_1 = 1
+#	placeholder_tech_1 = 1
 }
 add_ideas = {
-    #laws
-    war_economy
-    extensive_conscription
+        placeholder_idea
 }
 set_politics = {
 	ruling_party = monarchist
@@ -48,6 +46,7 @@ if = {
 set_convoys = 50
 
 recruit_character = VAL_leader
+recruit_character = VAL_placeholder_scientist
 
 
 

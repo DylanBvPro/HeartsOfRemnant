@@ -1,0 +1,37 @@
+VAL_strategy_plan = {
+	name = "Placeholder Valean Strategy Plan"
+	desc = "Threadbare abomination by Cordy to appease the error log."
+	allowed = {
+		tag = VAL
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_national_focuses = {
+		generic_history
+		generic_the_power_of_man
+	}
+	focus_factors = {
+		generic_the_power_of_man = 1.1
+	}
+	research = {
+		cat_placeholder = 1.1
+	}
+	ideas = {
+		placeholder_idea = 1
+	}
+	traits = {
+		silent_workhorse = 1
+	}
+	ai_strategy = {
+		type = pp_spend_amount
+		id = decision
+		value = 1
+	}
+	weight = {
+		base = 1
+	}
+}

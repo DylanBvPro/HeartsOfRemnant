@@ -6,6 +6,9 @@ state={
 	}
 	manpower=5
 	buildings_max_level_factor=1.000	state_category = wasteland
+		resources = {
+		placeholder_resource = 1
+	}	
 history={
 victory_points = { 296 1 }
 		owner = GRM

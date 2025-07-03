@@ -1,0 +1,8 @@
+placeholder_decision_category = {
+	icon = GFX_decision_category_generic
+	priority = 1
+	visible_when_empty = yes
+	visible = {
+		always = yes
+	}
+}

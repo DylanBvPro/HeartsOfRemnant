@@ -13,4 +13,20 @@ characters={
 			id=22322
 		}
 	}
+	VAL_placeholder_scientist = {
+		name = "Placeholder Scientist"
+		portraits = {
+			civilian = {
+				large = "GFX_placeholder"
+			}
+		}
+		scientist = {
+			skills = { 
+				placeholder_specialization = 1
+			}
+			traits = {
+				scientist_trait_placeholder_scientist_trait
+			}
+		}	
+	}
 }

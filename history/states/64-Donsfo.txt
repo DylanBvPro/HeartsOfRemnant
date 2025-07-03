@@ -7,6 +7,9 @@ state={
 	manpower=1000
 	buildings_max_level_factor=1.000
 	state_category = town	
+	resources = {
+		placeholder_resource = 1
+	}
 	history={
 victory_points = { 149 1 }
 		owner = AMH

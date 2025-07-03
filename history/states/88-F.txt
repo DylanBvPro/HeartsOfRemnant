@@ -7,11 +7,15 @@ state={
 	manpower=1000
 	buildings_max_level_factor=1.000
 	state_category = town	
+	resources = {
+		placeholder_resource = 1
+	}		
 	history={
-victory_points = { 502 1 }
+		victory_points = { 502 1 }
 		owner = MCC
 		add_core_of = MCC
-buildings = { 
-infrastructure = 2 }
+		buildings = { 
+			infrastructure = 2 
+		}
 	}
 }

@@ -1,49 +1,12 @@
 
-placeholder_generic = {
-	roles = {placeholder_role}
+placeholder_generic_1 = {
+	role = placeholder_role_1
 	upgrade_prio = {base = 1}
-	match_to_count = 0.2
+
 	placeholder_template_1 = {
 		target_width = 10
 		width_weight = 0.1
 		column_swap_factor = 0.1
-		stat_weights = {
-			0.01 #-- default_morale
-			0.01 #-- defense
-			0.01 #-- breakthrough
-			0.01 #-- hardness
-			0.01 #-- soft_attack
-			0.01 #-- hard_attack
-			0.01 #-- recon
-			0.01 #-- entrenchment
-			0.01 #-- initiative
-			0.01 #-- casualty_trickleback
-			0.01 #-- supply_consumption_factor
-			0.01 #-- supply_consumption
-			0.01 #-- suppression
-			0.01 #-- suppression_factor
-			0.01 #-- experience_loss_factor
-			0.01 #-- equipment_capture_factor
-			0.01 #-- fuel_capacity
-			#-- Air Values
-			0.01 #-- air_attack
-			#-- Common Values
-			0.01 #-- max_organisation
-			0.01 #-- max_strength
-			0.01 #-- maximum_speed
-			0.01 #-- armor_value
-			0.01 #-- ap_attack
-			0.01 #-- reliability
-			0.01 #-- reliability_factor
-			0.01 #-- weight
-			0.01 #-- fuel_consumption
-			0.01 #-- fuel_consumption_factor
-			0.01 #-- strat_attack
-			0.01 #-- carrier_size
-			0.01 #-- acc_hot_gain
-			0.01 #-- acc_cold_gain
-			0.01 #-- build_cost_ic
-		}
 		target_template = {
 			weight = 0.1
 			match_value = 1
@@ -52,8 +15,23 @@ placeholder_generic = {
 				rwbyinfantry=1
 			}
 		}
-		allowed_types = {
-			rwbyinfantry
+	}	
+}
+placeholder_generic_2 = {
+	role = placeholder_role_2
+	upgrade_prio = {base = 1}
+
+	placeholder_template_2 = {
+		target_width = 10
+		width_weight = 0.1
+		column_swap_factor = 0.1
+		target_template = {
+			weight = 0.1
+			match_value = 1
+			#support = {}
+			regiments = {
+				rwbyinfantry=3
+			}
 		}
 	}	
 }

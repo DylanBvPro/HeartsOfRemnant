@@ -7,8 +7,11 @@ state={
 	manpower=7000
 	state_category = rural
 	buildings_max_level_factor=1.000
-history={
-victory_points = { 2498 1 }
+	resources = {
+		placeholder_resource = 1
+	}
+	history={
+		victory_points = { 2498 1 }
 		owner = GRM
 		add_core_of = GRM
 	}

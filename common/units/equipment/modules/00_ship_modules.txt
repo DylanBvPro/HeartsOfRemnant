@@ -1,0 +1,43 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+
+	fixed_placeholder_ship_module = {
+		abbreviation = "psm"
+		category = placeholder_ship_module_category
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			naval_speed = 1
+			naval_range = 1
+			max_organisation = 1				
+			max_strength = 1
+			reliability = 0.01			
+			surface_detection = 1
+			sub_detection = 1
+			fuel_consumption = 1
+			build_cost_ic = 1
+
+			# Combat abilities
+			armor_value = 1
+
+			surface_visibility = 1
+
+			torpedo_attack = 1
+			sub_attack = 1
+			anti_air_attack = 1			
+			lg_attack = 1
+			lg_armor_piercing = 1
+			hg_attack = 1
+			hg_armor_piercing = 1
+
+
+		}
+
+		critical_parts = {
+			placeholder_critical_part
+		}
+
+	}	
+}

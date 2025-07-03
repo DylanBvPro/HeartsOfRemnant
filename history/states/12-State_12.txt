@@ -7,8 +7,11 @@ state={
 	manpower=500
     state_category = small_island	
 	buildings_max_level_factor=1.000
-history={
-victory_points = { 247 1 }
+	resources = {
+		placeholder_resource = 1
+	}
+	history={
+		victory_points = { 247 1 }
 		owner = VAL
 		
 		add_core_of = VAL

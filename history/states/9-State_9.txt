@@ -7,11 +7,18 @@ state={
 	manpower=1
     state_category = wasteland	
 	buildings_max_level_factor=1.000
-history={
-victory_points = { 825 1 }
+	resources = {
+		placeholder_resource = 1
+	}	
+	history={
+		victory_points = { 825 1 }
 		owner = GRM
-		
 		add_core_of = GRM
+
+		buildings = {
+			rwby_factory = 4
+			1634 = {naval_base = 1}
+		}
 	}
 
 }

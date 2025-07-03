@@ -1,0 +1,27 @@
+technologies = {
+	placeholder_air_doctrine_tech = {	
+		doctrine_name = "PLACEHOLDER_AIR_DOCTRINE"
+		
+		xp_research_type = air
+		xp_unlock_cost = 1
+		
+		
+		stability_factor =  0.1
+
+		doctrine = yes	
+		research_cost = 1
+
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			air_doctrine
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+}

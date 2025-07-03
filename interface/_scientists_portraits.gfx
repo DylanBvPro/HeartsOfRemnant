@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_generic_female_scientist"
+		texturefile = "gfx/leaders/placeholder.dds"
+	}
+
+
+}

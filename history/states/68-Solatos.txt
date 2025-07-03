@@ -7,7 +7,10 @@ state={
 	manpower=4450
 state_category = town
 	buildings_max_level_factor=1.000
-			history={
+	resources = {
+		placeholder_resource = 1
+	}
+	history={
 victory_points = { 1953 1 }
 		owner = ATL
 		

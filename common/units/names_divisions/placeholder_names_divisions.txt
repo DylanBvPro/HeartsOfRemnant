@@ -1,0 +1,22 @@
+PLACEHOLDER = {
+	name = "Placeholder Division"
+	for_countries = {} #If empty, everyone can use this.
+	can_use = {
+		always = yes
+	}
+	division_types = {"rwbyinfantry"}
+	fallback_name = "%d. Division"
+
+	ordered = {
+		1 = {"%d. Division"}
+		2 = {"%d. Division"}
+		3 = {"%d. Division"}
+		4 = {"%d. Division"}
+		5 = {"%d. Division"}
+		6 = {"%d. Division"}
+		7 = {"%d. Division"}
+		8 = {"%d. Division"}
+		9 = {"%d. Division"}
+		10 = {"%d. Division"}											
+	}
+}

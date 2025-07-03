@@ -6,9 +6,7 @@ state = {
 	buildings_max_level_factor = 1.000
 	state_category = city	
 	resources = {
-		steel = 5
-		tungsten = 5
-		aluminium = 5
+		placeholder_resource = 1
 	}
 	history = {
 		owner = VAL
@@ -18,6 +16,9 @@ state = {
 			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 1
+			2167 = {
+				placeholder_facility = 1
+			}
 		}
 	}
 }

@@ -1,0 +1,31 @@
+AI_placeholder_ship_designs = {
+	category = naval
+	available_for = {}
+	roles = {
+		placeholder_ship_role
+	}
+	priority = {
+		base = 1
+	}
+	AI_placeholder_ship_design = {
+		priority = {
+			base = 1
+		}
+		enable = {
+			always = yes
+		}
+		target_variant = {
+			match_value = 1
+			type = placeholder_ship
+			modules = {
+				placeholder_module_slot = fixed_placeholder_ship_module
+			}
+		}
+		requirements = {
+			module = fixed_placeholder_ship_module
+		}
+		allowed_modules = {
+			fixed_placeholder_ship_module
+		}
+	}	
+}

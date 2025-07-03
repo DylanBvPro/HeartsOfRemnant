@@ -1,2 +1,5 @@
 ﻿l_english:
- tech_spawning_decisions_desc:0 "Tech points [?THIS.rwby_tech_points]"
+ placeholder_decision_category:0 "Placeholder Decision Category"
+ placeholder_decision_category_desc:0 "Placeholder Decision Category's description."
+ placeholder_decision:0 "Placeholder Decision"
+ placeholder_decision_desc:0 "Placeholder Decision's description."  

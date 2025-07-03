@@ -1,0 +1,24 @@
+ideas = {
+	placeholder_slot= {
+		law = yes
+		use_list_view = yes
+
+		placeholder_idea = {
+			allowed = {
+				always = yes
+			}
+			cost = 1
+			removal_cost = 1
+
+			modifier = {
+				stability_factor = 0.01
+				conscription = 0.1
+				min_export = 0.1
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+scientist_trait_placeholder_scientist_trait = {
+	name = placeholder_scientist_trait
+	modifier = {
+		special_project_speed_factor = 0.01
+	}
+}

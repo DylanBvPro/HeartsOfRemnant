@@ -6,6 +6,9 @@ state={
 	}
 	manpower=1000
 	buildings_max_level_factor=1.000
+	resources = {
+		placeholder_resource = 1
+	}
 	state_category = town	
 		history={
 		    buildings = {

@@ -6,7 +6,7 @@ state = {
 	state_category = megalopolis	
 	buildings_max_level_factor = 1.000
 	resources = {
-		steel = 40
+		placeholder_resource = 1
 	}
 	history = {
 		owner = VAL

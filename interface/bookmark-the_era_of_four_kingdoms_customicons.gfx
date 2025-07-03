@@ -1,7 +1,0 @@
-spriteTypes = { 
-	##Icon For: The Era Of Four Kingdoms
-	SpriteType = { 
-		name = "the_era_of_four_kingdoms-207116"
-		texturefile = "gfx/interface/bookmarks/the_era_of_four_kingdoms-bookmark/the_era_of_four_kingdoms-207116.dds"
-	}
-

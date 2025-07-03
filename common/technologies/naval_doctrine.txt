@@ -1,0 +1,25 @@
+technologies = {
+	placeholder_naval_doctrine_tech = {
+		doctrine_name = "PLACEHOLDER_NAVAL_DOCTRINE"
+		
+		stability_factor = 0.01
+		
+		xp_research_type = navy
+		xp_unlock_cost = 1
+		doctrine = yes	
+		research_cost = 1
+		
+		categories = {
+			naval_doctrine
+		}
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+	}
+}

@@ -1,10 +1,12 @@
 ﻿capital = 62
 
-#oob = "MIS_100"
+oob = "MIS_100"
 
 # Starting tech
 #set_technology = {}
-
+add_ideas = {
+        placeholder_idea
+}
 
 set_convoys = 10
 

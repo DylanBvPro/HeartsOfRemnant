@@ -1,6 +1,6 @@
 ﻿capital = 98
 
-#oob = "CST_100"
+set_oob = "CST_100"
 
 # Starting tech
 #set_technology = {}
@@ -8,7 +8,9 @@
 100.1.1 = {
 
 	add_political_power = 1198
-	
+	add_ideas = {
+		placeholder_idea
+	}	
 	#generic focuses
 	#
 	

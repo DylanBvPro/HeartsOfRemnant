@@ -8,6 +8,9 @@ state={
 	manpower=21000
 	buildings_max_level_factor=1.000
 	state_category = town	
+	resources = {
+		placeholder_resource = 1
+	}	
 	history={
 		owner = VAL
 		victory_points = { 2194 5 }

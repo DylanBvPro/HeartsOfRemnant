@@ -51,6 +51,23 @@ focus_tree = {
 		prerequisite = { focus = generic_history  }
 		mutually_exclusive = { focus = generic_the_power_of_grimm  }
 	}
+	#The Power Of Man
+	focus = {
+		id = research_tech_focus
+		icon = GFX_goal_unknown
+		x = 12
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = generic_the_power_of_man }
+		completion_reward = {
+			set_technology = {
+				placeholder_tech_3 = 1
+			}
+		}
+	}	
 
 	#The Power Of Grimm
 	focus = {

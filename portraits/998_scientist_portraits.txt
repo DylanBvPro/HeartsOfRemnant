@@ -1,0 +1,153 @@
+continent = {
+	name = sanus
+	scientist = {
+		female = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+
+		}
+		male = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+		}
+	}
+}
+continent = {
+	name = anima
+	scientist = {
+		female = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+
+		}
+		male = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+		}
+	}
+}
+
+continent = {
+	name = solitas
+	scientist = {
+		female = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+
+		}
+		male = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+		}
+	}
+}
+
+continent = {
+	name = menagerie
+	scientist = {
+		female = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+
+		}
+		male = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+		}
+	}
+}
+
+continent = {
+	name = draco
+	scientist = {
+		female = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+
+		}
+		male = {
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+			"GFX_portrait_generic_female_scientist"
+		}
+	}
+}

@@ -6,17 +6,19 @@ state={
 	}
 	manpower=7648
 	buildings_max_level_factor=1.000
-state_category = metropolis
-			history={
-victory_points = { 1020 1 }
+	state_category = metropolis
+	resources = {
+		placeholder_resource = 1
+	}
+	history={
+		victory_points = { 1020 1 }
 		owner = ATL
-		
 		add_core_of = ATL
         buildings = {
-arms_factory = 2
-industrial_complex = 1
-infrastructure = 4
-air_base = 1
-}
+			arms_factory = 2
+			industrial_complex = 1
+			infrastructure = 4
+			air_base = 1
+		}
 	}
 }

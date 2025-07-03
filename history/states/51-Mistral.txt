@@ -7,9 +7,16 @@ state={
 	manpower=1000
 	buildings_max_level_factor=1.000
 	state_category = town	
-        history={
-buildings = { 
-infrastructure = 2 }
+	resources = {
+		placeholder_resource = 1
+	}  
+	history={
+		buildings = { 
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+		}
+
 		owner = MIS
 		victory_points = { 961 25 }
 		add_core_of = MIS

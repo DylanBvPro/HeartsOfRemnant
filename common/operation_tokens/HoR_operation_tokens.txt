@@ -1,9 +1,0 @@
-token_placeholder = {
-	name = OPERATION_TOKEN_PLACEHOLDER
-	desc = OPERATION_TOKEN_PLACEHOLDER_DESC
-	icon = GFX_placeholder
-	text_icon = GFX_placeholder
-
-	intel_source = army
-	intel_gain = 1
-}

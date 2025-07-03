@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_placeholder_folder_tab
+        textureFile = "gfx/interface/techtree/techtree_placeholder_tab.dds"
+        noOfFrames = 2
+    }
+}

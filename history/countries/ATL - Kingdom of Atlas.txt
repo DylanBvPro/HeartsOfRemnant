@@ -1,19 +1,20 @@
 ﻿capital = 65
 
-#oob = "ATL_100"
+set_oob = "ATL_100"
 
 # Starting tech
 #set_technology = {}
 
 
 	add_political_power = 1198
-	
+	add_ideas = {
+		placeholder_idea
+	}	
 	#generic focuses
 	#
 	
-	#oob = "ATL_100"
 	set_technology = {
-placeholder_tech_1 = 1
+		placeholder_tech_1 = 1
 	}
 
 

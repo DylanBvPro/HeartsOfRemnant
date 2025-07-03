@@ -1,0 +1,36 @@
+buildings = {
+		placeholder_facility = {
+		show_on_map = 1
+		base_cost = 1
+		per_controlled_building_extra_cost = 1
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		icon_frame = 1
+		value = 1
+		specialization = { placeholder_specialization }
+		tags = { facility }
+		disabled_in_dmz = yes
+		need_supply = yes
+		need_detection = yes
+		detecting_intel_type = army
+		only_display_if_exists = yes
+		special_icon = GFX_specialization_naval
+		level_cap = {
+			province_max = 1
+			state_max = 1
+			group_by = special_project_facility
+		}
+	}
+	rwby_factory = {
+		icon_frame = 5
+		base_cost = 150
+		level_cap = {
+			state_max = 5
+		}
+		state_modifiers = {
+			attrition_for_controller = -0.1
+			enemy_army_speed_factor = -0.25			
+		}
+
+		
+	}
+}

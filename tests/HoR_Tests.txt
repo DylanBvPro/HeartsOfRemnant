@@ -1,0 +1,19 @@
+last_date = 110.1.1
+tests = {
+	Grimm_win = {
+		success = {
+			VAL = {
+				has_capitulated = yes
+			}
+			VAC = {
+				has_capitulated = yes
+			}
+			MIS = {
+				has_capitulated = yes
+			}
+			GRM = {
+				has_capitulated = no
+			}
+		}
+	}
+}

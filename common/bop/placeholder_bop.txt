@@ -1,23 +1,39 @@
-placeholder_BOP = {
+placeholder_bop = {
+	initial_value = 0.1
 	left_side = placeholder_bop_left
 	right_side = placeholder_bop_right
-	decision_category = placeholder_decision_category
+#	decision_category = placeholder_decision_category
+	range = {
+		id = mid_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+			war_support_weekly = 0.5
+		}
+	}
 	side = {
 		id = placeholder_bop_left
-		#icon=
+		icon = GFX_decision_generic_civil_support
 		range = {
 			id = placeholder_bop_left_range
 			min = -1
 			max = -0.1
-		}
+			modifier = {
+				stability_factor = -0.1
+			}					
+		}	
 	}
 	side = {
 		id = placeholder_bop_right
-		#icon=
+		icon = GFX_decision_generic_civil_support
 		range = {
 			id = placeholder_bop_right_range
-			min = 0
-			max = 0.9
+			min = 0.1
+			max = 1
+			modifier = {
+				stability_factor = 0.1
+			}				
 		}
+	
 	}
 }
